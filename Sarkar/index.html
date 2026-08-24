@@ -6,23 +6,28 @@
   <title>VOLT Eau De Parfum | SARKAR PERFUMES</title>
   <meta name="description" content="VOLT Eau De Parfum by Sarkar Perfumes (House of Bhuvan Bam). Restless. Electric. Unstoppable. Scent notes of bergamot, black pepper, violet leaf, ozonic accord, vetiver & amber musk. ₹1,799 (100ml).">
   
-  <!-- Preconnect & Preload for 95+ PageSpeed Performance -->
+  <!-- High-End Typography (Cabinet Grotesk + Playfair Display + Satoshi) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&f[]=satoshi@300,400,700,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap">
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- Ambient Interactive Canvas Overlay & Custom Cursor Glow -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="custom-cursor-glow" id="cursorGlow"></div>
+
   <!-- Scroll Progress Indicator -->
   <div class="scroll-progress" id="scrollProgress"></div>
 
   <!-- ==========================================
-       HEADER & NAVIGATION
+       FLOATING GLASS PILL NAVIGATION
        ========================================== -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <a href="#" class="brand-logo" aria-label="Sarkar Perfumes Homepage">
         <span class="logo-main">SARKAR</span>
         <span class="logo-sub">HAUTE PARFUMERIE</span>
@@ -30,20 +35,21 @@
 
       <nav class="header-nav" aria-label="Main Navigation">
         <a href="#hero" class="nav-link">VOLT</a>
-        <a href="#notes" class="nav-link">NOTES</a>
-        <a href="#showcase" class="nav-link">CRAFTSMANSHIP</a>
-        <a href="#story" class="nav-link">PHILOSOPHY</a>
+        <a href="#simulator" class="nav-link">SILLAGE LAB</a>
+        <a href="#notes" class="nav-link">ACCORD ARCHITECTURE</a>
+        <a href="#alchemy" class="nav-link">ALCHEMY</a>
+        <a href="#verifier" class="nav-link">AUTHENTICITY</a>
         <a href="#pricing" class="nav-link">ACQUIRE</a>
       </nav>
 
       <div class="header-right">
         <button class="cart-trigger" id="cartTrigger" aria-label="Open Shopping Cart">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <path d="M16 10a4 4 0 0 1-8 0"></path>
           </svg>
-          <span class="cart-count" id="cartCount">0</span>
+          <span class="cart-count" id="cartCount">1</span>
         </button>
       </div>
     </div>
@@ -51,197 +57,286 @@
 
   <main>
     <!-- ==========================================
-         SECTION 1: HERO SECTION
-         Full-bleed dark atmospheric layout
+         SECTION 1: HERO ARCHITECTURE & AMBIENT LIGHTING TOGGLE
          ========================================== -->
     <section class="hero-section" id="hero">
-      <div class="hero-bg-effect"></div>
-
-      <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <div class="hero-badge">
-            <span class="badge-dot"></span>
-            LIMITED EDITION FRAGRANCE DROP
+      <div class="container">
+        <div class="hero-content-center reveal">
+          <div class="hero-pill-badge">
+            <span class="badge-pulse-dot"></span>
+            LIMITED EDITION HAUTE DROP • 100ML
           </div>
           
-          <h1 class="hero-title">VOLT</h1>
-          <p class="hero-tagline">RESTLESS. ELECTRIC. UNSTOPPABLE.</p>
-          
-          <p class="hero-desc">
-            A high-voltage olfactory force engineered for those who command room presence before saying a single word. Electrifying bergamot & pepper meets deep ozonic vetiver.
+          <h1 class="hero-h1-title">
+            RESTLESS. ELECTRIC.
+            <span class="inline-pill-img" style="background-image: url('assets/volt-hero-bottle.jpg');"></span>
+            <span style="color: var(--accent-electric); font-style: italic; font-family: var(--font-serif); font-weight: 600;">UNSTOPPABLE.</span>
+          </h1>
+
+          <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--text-subtle); max-width: 680px; margin: 0 auto 2.5rem auto; line-height: 1.7;">
+            Engineered for those who move before the world catches up. High-voltage Calabrian bergamot & black pepper meets deep ozonic Haitian vetiver.
           </p>
 
-          <div class="hero-actions">
-            <a href="#pricing" class="btn-primary">
-              EXPLORE PARFUM
-              <div class="btn-icon-wrapper">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div>
+          <div class="hero-actions-flex">
+            <a href="#pricing" class="btn-electric-magnetic js-add-to-cart">
+              ACQUIRE VOLT — ₹1,799
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
             </a>
 
-            <a href="#notes" class="btn-secondary">
-              DISCOVER NOTES
+            <a href="#simulator" class="btn-glass-secondary">
+              TEST SILLAGE LAB
             </a>
+          </div>
+
+          <!-- Interactive Ambient Lighting Bar -->
+          <div class="lighting-toggle-bar">
+            <span style="font-size: 0.68rem; letter-spacing: 0.2em; color: var(--text-muted); font-weight: 700; margin-right: 0.5rem;">LIGHTING:</span>
+            <button class="light-mode-btn active" data-light="cyan">ELECTRIC CYAN</button>
+            <button class="light-mode-btn" data-light="obsidian">OBSIDIAN DARK</button>
+            <button class="light-mode-btn" data-light="amber">AMBER GLOW</button>
           </div>
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="hero-bottle-frame">
-            <img src="assets/volt-hero-bottle.jpg" alt="SARKAR VOLT Eau De Parfum - Electric Blue Crystal King Chess Bottle" class="hero-bottle-img" width="600" height="900" fetchpriority="high" decoding="async">
+        <!-- 3D Bottle Stage -->
+        <div class="hero-bottle-3d-stage reveal">
+          <div class="hero-bottle-card-3d" id="heroBottleCard">
+            <img src="assets/volt-hero-bottle.jpg" alt="SARKAR VOLT Eau De Parfum Vessel" width="600" height="900" fetchpriority="high" decoding="async">
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         SECTION 2: FRAGRANCE NOTES BREAKDOWN
-         Minimal typography, dark background, electric cyan accent
+         FEATURE STRIP
          ========================================== -->
-    <section class="section-padding" id="notes">
+    <section class="feature-strip-section">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow">OLFACTORY ARCHITECTURE</span>
-          <h2 class="section-title">THE TRI-LAYER HARMONY</h2>
-          <p class="section-subtitle">Crafted with 25% French perfume oil concentration for relentless sillage and 12+ hour longevity.</p>
+        <div class="feature-strip-flex reveal">
+          <div class="feature-strip-item">CRUELTY FREE</div>
+          <div class="feature-strip-divider"></div>
+          <div class="feature-strip-item">12H+ LONGEVITY</div>
+          <div class="feature-strip-divider"></div>
+          <div class="feature-strip-item">25% EXTRAIT CONCENTRATION</div>
+          <div class="feature-strip-divider"></div>
+          <div class="feature-strip-item">IFRA CERTIFIED</div>
+          <div class="feature-strip-divider"></div>
+          <div class="feature-strip-item">FORMULATED IN FRANCE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MODULE 1: INTERACTIVE REAL-TIME SILLAGE & LONGEVITY SIMULATOR
+         ========================================== -->
+    <section class="section-hairline" id="simulator">
+      <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;" class="reveal">
+          <span style="font-size: 0.72rem; letter-spacing: 0.3em; color: var(--accent-electric); font-weight: 800; text-transform: uppercase;">INTERACTIVE SILLAGE LAB</span>
+          <h2 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); color: #FFF; margin-top: 0.5rem; margin-bottom: 0.85rem;">LONGEVITY PROJECTION SIMULATOR</h2>
+          <p style="color: var(--text-subtle); font-size: 1.05rem;">Drag the time slider to test how VOLT evolves across 14 hours in real-time.</p>
         </div>
 
-        <div class="notes-grid">
-          <!-- Top Notes Card -->
-          <div class="bezel-card note-card reveal">
-            <div class="bezel-card-inner">
-              <div class="note-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                </svg>
-              </div>
-              <span class="note-type-badge">TOP ACCORD — FIRST IMPACT</span>
-              <h3 class="note-card-title">Bergamot & Black Pepper</h3>
-              <p class="note-ingredients">Calabrian Bergamot • Sun-Drenched Black Pepper</p>
-              <p class="note-description">
+        <div class="simulator-card reveal">
+          <div class="sim-climate-tabs">
+            <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700; align-self: center; margin-right: 0.5rem;">CLIMATE:</span>
+            <button class="climate-btn active">SUMMER HEAT 35°C</button>
+            <button class="climate-btn">AC INDOORS 22°C</button>
+            <button class="climate-btn">NIGHT OUT 18°C</button>
+          </div>
+
+          <div class="sim-slider-wrap">
+            <div class="sim-slider-header">
+              <span style="font-size: 0.85rem; letter-spacing: 0.2em; color: var(--text-muted); font-weight: 700;">WEAR TIME ELAPSED:</span>
+              <span class="sim-hours-text" id="simHoursText">4 HOURS</span>
+            </div>
+            <input type="range" min="1" max="14" value="4" class="sim-range-input" id="simRange">
+          </div>
+
+          <div class="sim-stage-box">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+              <h4 id="simStageTitle" style="font-size: 1.35rem; color: #FFF;">ACT 02 — OZONE & VIOLET HEART</h4>
+              <span style="font-size: 0.8rem; color: var(--accent-electric); font-weight: 800;" id="simProjectionVal">86.2% PROJECTION</span>
+            </div>
+            <p id="simStageDesc" style="font-size: 0.95rem; color: var(--text-subtle); line-height: 1.7;">
+              Crushed Violet Leaves & Metallic Ozone Air settle into a cool, magnetic 4ft sillage radius.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: TRI-LAYER HARMONY (All 3 Layers Visible Vertically)
+         ========================================== -->
+    <section class="section-hairline" id="notes">
+      <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 3.5rem auto;" class="reveal">
+          <span style="font-size: 0.72rem; letter-spacing: 0.3em; color: var(--accent-electric); font-weight: 800; text-transform: uppercase;">OLFACTORY ARCHITECTURE</span>
+          <h2 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); color: #FFF; margin-top: 0.5rem; margin-bottom: 0.85rem;">THE TRI-LAYER HARMONY</h2>
+          <p style="color: var(--text-subtle); font-size: 1.05rem;">All three acts of VOLT working in synchrony across 12+ hours.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 2.5rem;" class="reveal">
+          
+          <!-- Act 1 Stage (Top Accord) -->
+          <div class="accord-act-fullwidth accord-act-1">
+            <div class="accord-act-num">01</div>
+            <div>
+              <span style="font-size: 0.72rem; letter-spacing: 0.28em; color: var(--accent-electric); font-weight: 800; text-transform: uppercase;">TOP ACCORD — FIRST IMPACT</span>
+              <h3 class="accord-headline">Bergamot & Black Pepper</h3>
+              <p class="accord-subtext">Calabrian Bergamot • Sun-Drenched Black Pepper</p>
+              <p class="accord-desc-body">
                 An explosive spark of crisp citrus enveloped in sharp, freshly cracked peppercorn. Awakens the senses instantly with an electric surge of energy.
               </p>
             </div>
           </div>
 
-          <!-- Mid Notes Card -->
-          <div class="bezel-card note-card reveal">
-            <div class="bezel-card-inner">
-              <div class="note-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                </svg>
-              </div>
-              <span class="note-type-badge">HEART ACCORD — MID TRANSITION</span>
-              <h3 class="note-card-title">Violet Leaf & Ozonic Accord</h3>
-              <p class="note-ingredients">Crushed Violet Leaves • Metallic Electricity Air</p>
-              <p class="note-description">
+          <!-- Act 2 Stage (Heart Accord) -->
+          <div class="accord-act-fullwidth accord-act-2">
+            <div class="accord-act-num" style="color: #00B0FF;">02</div>
+            <div>
+              <span style="font-size: 0.72rem; letter-spacing: 0.28em; color: #00B0FF; font-weight: 800; text-transform: uppercase;">HEART ACCORD — MID TRANSITION</span>
+              <h3 class="accord-headline">Violet Leaf & Ozonic Accord</h3>
+              <p class="accord-subtext">Crushed Violet Leaves • Metallic Electricity Air</p>
+              <p class="accord-desc-body">
                 A cool, atmospheric wave evoking thunderstorm air. The herbal green crispness of violet leaves fuses seamlessly with a modern metallic ozone trail.
               </p>
             </div>
           </div>
 
-          <!-- Base Notes Card -->
-          <div class="bezel-card note-card reveal">
-            <div class="bezel-card-inner">
-              <div class="note-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
-              </div>
-              <span class="note-type-badge">DRYDOWN ACCORD — BASE ANCHOR</span>
-              <h3 class="note-card-title">Vetiver & Amber Musk</h3>
-              <p class="note-ingredients">Smoky Haitian Vetiver • Luminous Amber • Velvet Musk</p>
-              <p class="note-description">
+          <!-- Act 3 Stage (Drydown Accord) -->
+          <div class="accord-act-fullwidth accord-act-3">
+            <div class="accord-act-num" style="color: #FFB347;">03</div>
+            <div>
+              <span style="font-size: 0.72rem; letter-spacing: 0.28em; color: #FFB347; font-weight: 800; text-transform: uppercase;">DRYDOWN ACCORD — BASE ANCHOR</span>
+              <h3 class="accord-headline">Vetiver & Amber Musk</h3>
+              <p class="accord-subtext">Smoky Haitian Vetiver • Luminous Amber • Velvet Musk</p>
+              <p class="accord-desc-body">
                 A dark, irresistible ground of earthy roots, rich warm resinous amber, and tactile velvet musk. Leaves an unshakeable, hypnotic trail long after you leave.
               </p>
             </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MODULE: INTERACTIVE FRAGRANCE ALCHEMY COMBINATOR
+         ========================================== -->
+    <section class="section-hairline" id="alchemy">
+      <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;" class="reveal">
+          <span style="font-size: 0.72rem; letter-spacing: 0.3em; color: var(--accent-electric); font-weight: 800; text-transform: uppercase;">FRAGRANCE ALCHEMY</span>
+          <h2 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); color: #FFF; margin-top: 0.5rem; margin-bottom: 0.85rem;">LAYERING COMBINATOR</h2>
+          <p style="color: var(--text-subtle); font-size: 1.05rem;">Click a Sarkar perfume below to simulate combining it with VOLT.</p>
         </div>
 
-        <!-- Official Sarkar Razor-Sharp Vector Pillar Grid -->
-        <div class="pillars-container reveal">
-          <div class="pillars-grid">
-            
-            <div class="pillar-card">
-              <div class="pillar-icon-box">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-              </div>
-              <h4 class="pillar-title">CRUELTY FREE</h4>
-              <p class="pillar-desc">100% Ethically Formulated & Cruelty Free</p>
-            </div>
+        <div class="alchemy-card reveal">
+          <div class="alchemy-grid">
+            <button class="alchemy-layer-btn active" data-layer="throne">
+              <span style="font-size: 1.25rem; font-weight: 800; display: block; margin-bottom: 0.25rem;">VOLT + THRONE</span>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Royal Leather Accord</span>
+            </button>
 
-            <div class="pillar-card">
-              <div class="pillar-icon-box">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-              </div>
-              <h4 class="pillar-title">LONG LASTING</h4>
-              <p class="pillar-desc">12+ Hours Relentless Sillage & Projection</p>
-            </div>
+            <button class="alchemy-layer-btn" data-layer="regal">
+              <span style="font-size: 1.25rem; font-weight: 800; display: block; margin-bottom: 0.25rem;">VOLT + REGAL</span>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Metallic Oud Hybrid</span>
+            </button>
 
-            <div class="pillar-card">
-              <div class="pillar-icon-box">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
-                </svg>
-              </div>
-              <h4 class="pillar-title">25% OIL CONCENTRATION</h4>
-              <p class="pillar-desc">Pure Extrait De Parfum Grade</p>
-            </div>
+            <button class="alchemy-layer-btn" data-layer="noble">
+              <span style="font-size: 1.25rem; font-weight: 800; display: block; margin-bottom: 0.25rem;">VOLT + NOBLE</span>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">Citrus Smoke Surge</span>
+            </button>
+          </div>
 
-            <div class="pillar-card">
-              <div class="pillar-icon-box">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
-              </div>
-              <h4 class="pillar-title">IFRA CERTIFIED</h4>
-              <p class="pillar-desc">International Fragrance Association Compliant</p>
-            </div>
-
-            <div class="pillar-card">
-              <div class="pillar-icon-box">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                </svg>
-              </div>
-              <h4 class="pillar-title">FORMULATED IN FRANCE</h4>
-              <p class="pillar-desc">Sourced from Master Perfumers Grasse & Spain</p>
-            </div>
-
+          <div class="alchemy-result-box" id="alchemyResultBox">
+            <div style="color: var(--accent-electric); font-size: 0.72rem; letter-spacing: 0.28em; font-weight: 800; text-transform: uppercase;">SARKAR ALCHEMY FORMULA</div>
+            <h4 style="font-size: 1.45rem; color: #FFF; margin-top: 0.4rem; margin-bottom: 0.5rem;">VOLT + THRONE (ROYAL AMBER SHIFT)</h4>
+            <p style="font-size: 0.9rem; color: var(--text-subtle); line-height: 1.7;">
+              Layering VOLT’s electric bergamot over Throne’s rich leather accord creates a commanding, high-contrast evening profile with 14+ hour projection.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         SECTION 3: PRODUCT IMAGE AREA SHOWCASE
-         Centered packaging shot & brand campaign grid showcase
+         MODULE 2: INTERACTIVE BATCH AUTHENTICITY VERIFIER
          ========================================== -->
-    <section class="section-padding" id="showcase">
+    <section class="section-hairline" id="verifier">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow">THE CRAFTSMANSHIP</span>
-          <h2 class="section-title">CHESS KING VESSEL & CAMPAIGN</h2>
-          <p class="section-subtitle">Housed in Sarkar’s signature King Chess Piece silhouette with heavy glass casing, cross finial topper, and minimal base emblem.</p>
-        </div>
+        <div class="verifier-wrap reveal">
+          <div>
+            <span style="font-size: 0.72rem; letter-spacing: 0.3em; color: var(--accent-electric); font-weight: 800; text-transform: uppercase;">AUTHENTICITY GUARANTEE</span>
+            <h3 style="font-size: clamp(2rem, 4vw, 3.2rem); color: #FFF; margin-top: 0.5rem; margin-bottom: 0.85rem;">BATCH VERIFIER</h3>
+            <p style="color: var(--text-subtle); font-size: 0.95rem; line-height: 1.7;">
+              Every Sarkar bottle is laser-engraved at the base with a unique batch certificate number. Type or test a code below to verify genuine Extrait De Parfum origin.
+            </p>
 
-        <div class="showcase-grid">
-          <div class="showcase-stage reveal">
-            <img src="assets/volt-campaign-grid.jpg" alt="Sarkar VOLT Master Campaign & Collection Grid" class="showcase-stage-img" width="1024" height="682" loading="lazy" decoding="async">
+            <div class="verifier-input-group">
+              <input type="text" value="VOLT-2026-884" class="verifier-input" id="verifyInput" placeholder="Enter Batch Code">
+              <button class="btn-electric-magnetic" id="verifyBtn" style="padding: 0.85rem 1.8rem; font-size: 0.75rem;">VERIFY</button>
+            </div>
           </div>
 
-          <div class="ambassador-card reveal">
-            <img src="assets/sarkar-ambassador.png" alt="Bhuvan Bam - Sarkar Brand Ambassador" class="ambassador-img" width="600" height="600" loading="lazy" decoding="async">
+          <div class="verify-result-box active" id="verifyResult">
+            <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--accent-electric); font-weight: 800; margin-bottom: 0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span>AUTHENTIC SARKAR BATCH VERIFIED</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-subtle);">
+              Batch Reference: <strong>VOLT-2026-884</strong> • Formulated in Grasse, France • 25% Extrait Oil Concentration Verified.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: GAPLESS BENTO GRID
+         ========================================== -->
+    <section class="section-hairline" id="bento">
+      <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;" class="reveal">
+          <span style="font-size: 0.72rem; letter-spacing: 0.3em; color: var(--accent-electric); font-weight: 800; text-transform: uppercase;">SPECIFICATIONS & CRAFTSMANSHIP</span>
+          <h2 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); color: #FFF; margin-top: 0.5rem; margin-bottom: 0.85rem;">ENGINEERED FOR POWER</h2>
+          <p style="color: var(--text-subtle); font-size: 1.05rem;">From Grasse master perfumers to Sarkar’s signature heavy glass King Chess Vessel.</p>
+        </div>
+
+        <div class="bento-grid-container reveal">
+          <div class="bento-card bento-card-large">
+            <img src="assets/volt-campaign-grid.jpg" alt="Sarkar Campaign Collection" class="bento-card-img" width="1024" height="682" loading="lazy" decoding="async">
+            <div class="bento-card-content">
+              <span class="bento-tag">MASTER CAMPAIGN</span>
+              <h3 class="bento-title">CHESS KING VESSEL</h3>
+              <p class="bento-desc">Housed in heavy-weighted crystal glass with a cross finial stopper and laser-engraved minimal emblem base.</p>
+            </div>
+          </div>
+
+          <div class="bento-card bento-card-tall">
+            <img src="assets/sarkar-ambassador.png" alt="Bhuvan Bam - Sarkar Ambassador" class="bento-card-img" width="600" height="600" loading="lazy" decoding="async">
+            <div class="bento-card-content" style="margin-top: auto;">
+              <span class="bento-tag">BRAND AMBASSADOR</span>
+              <h3 style="font-size: 1.8rem; color: #FFF; margin-bottom: 0.5rem;">BHUVAN BAM</h3>
+              <p style="font-size: 0.88rem; color: var(--text-subtle);">“VOLT is not just a fragrance. It’s an unspoken electric statement.”</p>
+            </div>
+          </div>
+
+          <div class="bento-card bento-card-wide">
+            <div class="bento-card-content">
+              <span class="bento-tag">FORMULATION</span>
+              <h3 style="font-size: 2rem; color: #FFF; margin-bottom: 0.5rem;">25% PURE EXTRAIT OIL CONCENTRATION</h3>
+              <p style="font-size: 0.92rem; color: var(--text-subtle); max-width: 600px;">
+                Higher concentration than standard Eau De Parfum grade (15%). Formulated with raw botanical extracts sourced directly from Grasse, France.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -249,93 +344,86 @@
 
     <!-- ==========================================
          SECTION 4: BRAND STORY STRIP
-         Styled like Sarkar's "Power isn't inherited. It's built." section
          ========================================== -->
-    <section class="story-strip-section" id="story">
-      <div class="container story-container reveal">
-        <div class="story-quote-mark">“</div>
-        <blockquote class="story-quote">
-          For the ones who move before the world catches up.
+    <section class="section-hairline" id="story">
+      <div class="container story-scrub-section reveal">
+        <div style="font-family: var(--font-serif); font-size: 5.5rem; color: var(--accent-electric); line-height: 0.4; margin-bottom: 1.5rem; opacity: 0.8;">“</div>
+        <blockquote style="font-family: var(--font-serif); font-size: clamp(2.4rem, 5.8vw, 4.5rem); font-weight: 700; color: #FFF; line-height: 1.2; margin-bottom: 2.5rem; text-transform: uppercase;">
+          <span class="story-scrub-word">For</span>
+          <span class="story-scrub-word">the</span>
+          <span class="story-scrub-word">ones</span>
+          <span class="story-scrub-word">who</span>
+          <span class="story-scrub-word">move</span>
+          <span class="story-scrub-word">before</span>
+          <span class="story-scrub-word">the</span>
+          <span class="story-scrub-word">world</span>
+          <span class="story-scrub-word">catches</span>
+          <span class="story-scrub-word">up.</span>
         </blockquote>
-        <div class="story-author">
-          <span class="story-line"></span>
-          SARKAR PARFUM PHILOSOPHY
-          <span class="story-line"></span>
+        <div style="font-size: 0.78rem; letter-spacing: 0.32em; text-transform: uppercase; color: var(--accent-electric); font-weight: 800;">
+          — SARKAR PARFUM PHILOSOPHY
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         SECTION 5: PRICING & CTA SECTION
-         Price display, Add to Cart button, urgency & free shipping banner
+         SECTION 5: ACQUIRE VOLT (Pricing & Checkout)
          ========================================== -->
-    <section class="section-padding" id="pricing">
+    <section class="section-hairline" id="pricing">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow">ACQUIRE VOLT</span>
-          <h2 class="section-title">THE HIGH VOLTAGE DROP</h2>
-          <p class="section-subtitle">Direct from Sarkar Haute Parfumerie. Free express shipping nationwide.</p>
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 3.5rem auto;" class="reveal">
+          <span style="font-size: 0.72rem; letter-spacing: 0.3em; color: var(--accent-electric); font-weight: 800; text-transform: uppercase;">ACQUIRE VOLT</span>
+          <h2 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); color: #FFF; margin-top: 0.5rem; margin-bottom: 0.85rem;">THE HIGH VOLTAGE DROP</h2>
+          <p style="color: var(--text-subtle); font-size: 1.05rem;">Direct from Sarkar Haute Parfumerie. Free express shipping nationwide.</p>
         </div>
 
         <div class="pricing-card-wrap reveal">
-          <div class="bezel-card">
-            <div class="bezel-card-inner pricing-inner">
-              
-              <div class="pricing-left">
-                <div class="price-header">
-                  <h3 class="price-title">VOLT EAU DE PARFUM</h3>
-                  <span class="price-volume">100 ML / 3.4 FL. OZ. • 25% EXTRAIT CONCENTRATION</span>
-                </div>
-
-                <div class="price-tag-wrap">
-                  <span class="price-current">₹1,799</span>
-                  <span class="price-original">₹2,499</span>
-                  <span class="price-save-badge">SAVE 28%</span>
-                </div>
-
-                <div class="urgency-banner">
-                  <span class="urgency-pulse"></span>
-                  LIMITED FIRST BATCH DROP • 84 BOTTLES REMAINING
-                </div>
-
-                <ul class="pricing-features">
-                  <li>
-                    <svg class="feature-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    Original Sarkar King Chess Piece Vessel Included
-                  </li>
-                  <li>
-                    <svg class="feature-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    Complimentary Express Insured Shipping Across India
-                  </li>
-                  <li>
-                    <svg class="feature-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    Guaranteed 100% Authentic Base-Engraved Bottle
-                  </li>
-                </ul>
+          <div class="acquire-grid">
+            <div>
+              <div style="border-bottom: 1px solid var(--border-hairline); padding-bottom: 1.25rem; margin-bottom: 1.25rem;">
+                <h3 style="font-size: clamp(2.2rem, 4.5vw, 3.5rem); color: #FFF; margin-bottom: 0.5rem;">VOLT EAU DE PARFUM</h3>
+                <span style="font-size: 0.8rem; letter-spacing: 0.22em; color: var(--text-muted); text-transform: uppercase;">100 ML / 3.4 FL. OZ. • 25% EXTRAIT CONCENTRATION</span>
               </div>
 
-              <div class="pricing-right">
-                <button class="btn-primary cart-cta-btn js-add-to-cart">
-                  ADD TO CART — ₹1,799
-                  <div class="btn-icon-wrapper">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                      <line x1="3" y1="6" x2="21" y2="6"></line>
-                    </svg>
-                  </div>
-                </button>
-
-                <p style="text-align: center; font-size: 0.78rem; color: var(--text-dark); margin-top: 1rem;">
-                  Secure Payment Gateway • Cash on Delivery & UPI Available
-                </p>
+              <div style="display: flex; align-items: baseline; gap: 1.1rem; margin-top: 1.75rem; margin-bottom: 1.75rem;">
+                <span class="price-tag-amount">₹1,799</span>
+                <span class="price-tag-original">₹2,499</span>
+                <span class="price-save-badge">SAVE 28%</span>
               </div>
 
+              <div class="urgency-banner">
+                <span class="badge-pulse-dot"></span>
+                LIMITED FIRST BATCH DROP • 84 BOTTLES REMAINING
+              </div>
+
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
+                <li style="display: flex; align-items: center; gap: 0.85rem; font-size: 0.95rem; color: var(--text-subtle);">
+                  <span style="width: 14px; height: 2px; background: var(--accent-electric); flex-shrink: 0;"></span>
+                  Original Sarkar King Chess Piece Vessel Included
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.85rem; font-size: 0.95rem; color: var(--text-subtle);">
+                  <span style="width: 14px; height: 2px; background: var(--accent-electric); flex-shrink: 0;"></span>
+                  Complimentary Express Insured Shipping Across India
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.85rem; font-size: 0.95rem; color: var(--text-subtle);">
+                  <span style="width: 14px; height: 2px; background: var(--accent-electric); flex-shrink: 0;"></span>
+                  Guaranteed 100% Authentic Base-Engraved Bottle
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <button class="btn-electric-magnetic cart-cta-btn js-add-to-cart">
+                ADD TO CART — ₹1,799
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                </svg>
+              </button>
+
+              <p style="text-align: center; font-size: 0.78rem; color: var(--text-dark); margin-top: 1.25rem;">
+                Secure Payment Gateway • Cash on Delivery & UPI Available
+              </p>
             </div>
           </div>
         </div>
@@ -345,12 +433,10 @@
 
   <!-- ==========================================
        SECTION 6: FOOTER
-       Minimal Sarkar store footer style
        ========================================== -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        
         <div class="footer-brand">
           <div class="footer-logo">SARKAR</div>
           <p>
@@ -370,7 +456,7 @@
         </div>
 
         <div class="footer-col">
-          <h4 class="footer-col-title">COLLECTION</h4>
+          <h4 style="font-size: 0.78rem; letter-spacing: 0.25em; color: #FFF; margin-bottom: 1.25rem;">COLLECTION</h4>
           <ul class="footer-links">
             <li><a href="#hero">VOLT (New)</a></li>
             <li><a href="#">Throne</a></li>
@@ -381,7 +467,7 @@
         </div>
 
         <div class="footer-col">
-          <h4 class="footer-col-title">SUPPORT</h4>
+          <h4 style="font-size: 0.78rem; letter-spacing: 0.25em; color: #FFF; margin-bottom: 1.25rem;">SUPPORT</h4>
           <ul class="footer-links">
             <li><a href="#">Track Order</a></li>
             <li><a href="#">Authenticity Check</a></li>
@@ -392,7 +478,7 @@
         </div>
 
         <div class="footer-col">
-          <h4 class="footer-col-title">LEGAL</h4>
+          <h4 style="font-size: 0.78rem; letter-spacing: 0.25em; color: #FFF; margin-bottom: 1.25rem;">LEGAL</h4>
           <ul class="footer-links">
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Service</a></li>
@@ -400,7 +486,6 @@
             <li><a href="#">Refund Policy</a></li>
           </ul>
         </div>
-
       </div>
 
       <div class="footer-bottom">
@@ -421,7 +506,7 @@
   
   <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart Drawer">
     <div class="cart-drawer-header">
-      <h3 class="cart-drawer-title">YOUR CART (1)</h3>
+      <h3 style="font-size: 1.2rem; color: #FFF;">YOUR CART</h3>
       <button class="close-cart-btn" id="closeCartBtn" aria-label="Close Cart">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -432,11 +517,11 @@
 
     <div class="cart-drawer-body">
       <div class="cart-item">
-        <img src="assets/volt-hero-bottle.jpg" alt="VOLT Eau De Parfum" class="cart-item-img" width="72" height="72">
+        <img src="assets/volt-hero-bottle.jpg" alt="VOLT Eau De Parfum" class="cart-item-img" width="80" height="80">
         <div class="cart-item-info">
-          <h4 class="cart-item-title">SARKAR VOLT EAU DE PARFUM</h4>
+          <h4 style="color: #FFF; font-size: 1rem; margin-bottom: 0.25rem;">SARKAR VOLT EAU DE PARFUM</h4>
           <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.5rem;">100 ml / 3.4 fl. oz.</p>
-          <div class="cart-item-price">₹1,799</div>
+          <div style="color: var(--accent-electric); font-weight: 800; font-size: 0.95rem; margin-bottom: 0.75rem;">₹1,799</div>
 
           <div class="cart-qty-ctrl">
             <button class="qty-btn" id="qtyMinus">-</button>
@@ -446,8 +531,8 @@
         </div>
       </div>
 
-      <div style="margin-top: 2rem; background: rgba(0,229,255,0.05); padding: 1rem; border-radius: 12px; border: 1px dashed var(--border-accent);">
-        <p style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700;">⚡ YOU QUALIFY FOR FREE EXPRESS SHIPPING</p>
+      <div style="margin-top: 2rem; background: rgba(0,229,255,0.06); padding: 1rem; border-radius: 12px; border: 1px dashed var(--border-accent);">
+        <p style="font-size: 0.8rem; color: var(--accent-electric); font-weight: 800;">⚡ YOU QUALIFY FOR FREE EXPRESS SHIPPING</p>
         <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Estimated delivery within 2-4 business days.</p>
       </div>
     </div>
@@ -455,9 +540,9 @@
     <div class="cart-drawer-footer">
       <div class="cart-subtotal">
         <span>SUBTOTAL</span>
-        <span id="cartSubtotal" style="color: var(--accent-cyan);">₹1,799</span>
+        <span id="cartSubtotal" style="color: var(--accent-electric);">₹1,799</span>
       </div>
-      <button class="btn-primary checkout-btn" onclick="alert('Proceeding to Sarkar Secure Checkout...')">
+      <button class="btn-electric-magnetic checkout-btn" onclick="alert('Proceeding to Sarkar Secure Checkout...')">
         PROCEED TO CHECKOUT
       </button>
     </div>
@@ -465,7 +550,7 @@
 
   <!-- Toast Notification element -->
   <div class="toast-msg" id="toastMsg">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-electric)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
       <polyline points="22 4 12 14.01 9 11.01"></polyline>
     </svg>
