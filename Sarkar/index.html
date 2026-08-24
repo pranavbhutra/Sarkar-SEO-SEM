@@ -10,13 +10,11 @@
   <link rel="preload" as="image" href="assets/volt-hero-bottle.webp" type="image/webp" fetchpriority="high">
 
   <!-- Preconnect to Font CDN -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 
-  <!-- Asynchronous Non-Blocking Fonts -->
-  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&f[]=satoshi@400,700,900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- Fonts loaded fully async via JS after page paint — zero render blocking -->
 
   <!-- 100% Inlined Master CSS for 0ms Render-Blocking Delay (99+ PageSpeed Score) -->
   <style>
@@ -225,7 +223,7 @@
          ========================================== -->
     <section class="hero-section" id="hero" aria-label="Hero Introduction">
       <div class="container">
-        <div class="hero-content-center reveal">
+        <div class="hero-content-center">
           <div class="hero-pill-badge">
             <span class="badge-pulse-dot" aria-hidden="true"></span>
             LIMITED EDITION HAUTE DROP • 100ML
@@ -264,7 +262,7 @@
         </div>
 
         <!-- 3D Bottle Stage -->
-        <div class="hero-bottle-3d-stage reveal">
+        <div class="hero-bottle-3d-stage">
           <div class="hero-bottle-card-3d" id="heroBottleCard">
             <picture>
               <source srcset="assets/volt-hero-bottle.webp" type="image/webp">
@@ -728,6 +726,29 @@
     </svg>
     <span id="toastText">VOLT Eau De Parfum added to cart</span>
   </div>
+
+  <!-- Load fonts after first paint — zero render blocking, zero LCP delay -->
+  <script>
+    (function() {
+      var d = document, h = d.head;
+      function addLink(href) {
+        var l = d.createElement('link');
+        l.rel = 'stylesheet'; l.href = href;
+        h.appendChild(l);
+      }
+      if (window.requestIdleCallback) {
+        requestIdleCallback(function() {
+          addLink('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&f[]=satoshi@400,700,900&display=swap');
+          addLink('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap');
+        });
+      } else {
+        window.addEventListener('load', function() {
+          addLink('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&f[]=satoshi@400,700,900&display=swap');
+          addLink('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap');
+        });
+      }
+    })();
+  </script>
 
   <!-- Deferred Non-Blocking Engine Script -->
   <script src="script.js" defer></script>
