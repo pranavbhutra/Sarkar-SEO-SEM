@@ -1,14 +1,12 @@
 /* ==========================================================================
    SARKAR PERFUMES — VOLT EAU DE PARFUM
-   Master Interactive Luxury Frontend Architecture (Alchemy & Fragrance Wheel)
+   Master Luxury Frontend Architecture (Gradual Stacking Cards Scroll Physics)
    ========================================================================== */
 
 /* --- CSS Custom Design Tokens --- */
 :root {
   --bg-deep: #050508;
   --bg-surface: #08080d;
-  --bg-card: #0d0d14;
-  --bg-card-hover: #12121d;
   --bg-glass: rgba(8, 8, 13, 0.92);
   
   --border-hairline: rgba(255, 255, 255, 0.08);
@@ -22,15 +20,15 @@
   --accent-glow-intense: rgba(0, 229, 255, 0.6);
   
   --text-main: #FFFFFF;
-  --text-subtle: #D4D4D8;
-  --text-muted: #8E8E93;
-  --text-dark: #48484A;
+  --text-subtle: #E4E4E7;
+  --text-muted: #A1A1AA;
+  --text-dark: #71717A;
 
   --focus-ring: 0 0 0 2px var(--bg-deep), 0 0 0 4px var(--accent-electric);
 
   --font-heading: 'Cabinet Grotesk', 'Playfair Display', sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Satoshi', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-sans: 'Satoshi', system-ui, sans-serif;
 
   --container-max: 1320px;
   --header-height: 84px;
@@ -179,6 +177,7 @@ img {
   padding-bottom: var(--section-padding-v);
   border-bottom: 1px solid var(--border-hairline);
   z-index: 2;
+  overflow: visible !important;
 }
 
 /* --- Floating Navigation --- */
@@ -354,24 +353,6 @@ img {
   text-shadow: 0 0 60px rgba(0, 229, 255, 0.3);
 }
 
-.inline-pill-img {
-  display: inline-block;
-  vertical-align: middle;
-  height: clamp(2.2rem, 5vw, 3.8rem);
-  width: clamp(4.5rem, 9vw, 8rem);
-  border-radius: var(--radius-full);
-  background-size: cover;
-  background-position: center;
-  margin: 0 0.5rem;
-  border: 1px solid var(--border-bezel);
-  box-shadow: 0 0 20px rgba(0, 229, 255, 0.25);
-  transition: transform var(--transition-fast);
-}
-
-.inline-pill-img:hover {
-  transform: scale(1.08) rotate(-2deg);
-}
-
 .hero-actions-flex {
   display: flex;
   flex-direction: column;
@@ -478,6 +459,7 @@ img {
   border: 1px solid var(--border-bezel);
   box-shadow: 0 35px 90px rgba(0, 0, 0, 0.95), 0 0 50px var(--accent-glow);
   background: #000;
+  padding: 0;
   transform-style: preserve-3d;
   transition: transform 0.15s ease-out, box-shadow 0.4s ease;
 }
@@ -486,6 +468,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 10%;
   display: block;
 }
 
@@ -542,21 +525,104 @@ img {
 }
 
 /* ==========================================================================
-   NEW MODULE: INTERACTIVE FRAGRANCE ALCHEMY COMBINATOR
+   STICKY HEADER + STACKING CARDS ENGINE (GRADUAL SCROLL PHYSICS)
    ========================================================================== */
-.alchemy-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-bezel);
-  border-radius: var(--radius-lg);
-  padding: 3rem 2rem;
-  margin-top: 4rem;
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.9);
+#notes {
+  position: relative;
+  min-height: 260vh;
+  overflow: visible !important;
 }
 
-@media (min-width: 768px) {
-  .alchemy-card {
-    padding: 4rem 3.5rem;
-  }
+.accord-header-sticky {
+  position: sticky;
+  top: 80px;
+  z-index: 50;
+  background: var(--bg-deep);
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.accord-act-fullwidth {
+  background: #09090e;
+  border: 1px solid var(--border-bezel);
+  border-left: 4px solid var(--accent-electric);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.25rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  margin-bottom: 18vh;
+}
+
+.accord-act-1 {
+  position: sticky;
+  top: 230px;
+  z-index: 10;
+  box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.95);
+}
+
+.accord-act-2 {
+  position: sticky;
+  top: 265px;
+  z-index: 20;
+  border-left-color: #00B0FF;
+  box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.95);
+}
+
+.accord-act-3 {
+  position: sticky;
+  top: 300px;
+  z-index: 30;
+  border-left-color: #FFB347;
+  box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.95);
+  margin-bottom: 0;
+}
+
+.accord-act-num {
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 0.85;
+  color: var(--accent-electric);
+  font-family: var(--font-heading);
+}
+
+.accord-headline {
+  font-size: clamp(1.7rem, 3.8vw, 2.6rem);
+  color: #FFF;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.accord-subtext {
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+}
+
+.accord-desc-body {
+  font-size: 0.95rem;
+  color: var(--text-subtle);
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   SEAMLESS LAYOUT MODULES
+   ========================================================================== */
+.alchemy-card,
+.simulator-card,
+.pricing-card-wrap {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 3rem;
 }
 
 .alchemy-grid {
@@ -589,29 +655,12 @@ img {
 }
 
 .alchemy-result-box {
-  background: rgba(0, 229, 255, 0.05);
-  border: 1px solid var(--border-accent);
+  background: rgba(0, 229, 255, 0.04);
+  border: 1px solid var(--border-hairline);
+  border-left: 3px solid var(--accent-electric);
   padding: 2rem;
   border-radius: var(--radius-md);
   margin-top: 2rem;
-}
-
-/* ==========================================================================
-   MODULE 1: INTERACTIVE REAL-TIME SILLAGE SIMULATOR
-   ========================================================================== */
-.simulator-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-bezel);
-  border-radius: var(--radius-lg);
-  padding: 3rem 2rem;
-  margin-top: 3.5rem;
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.9);
-}
-
-@media (min-width: 768px) {
-  .simulator-card {
-    padding: 4rem 3.5rem;
-  }
 }
 
 .sim-slider-wrap {
@@ -655,6 +704,7 @@ img {
 .sim-stage-box {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-hairline);
+  border-left: 3px solid var(--accent-electric);
   padding: 2rem;
   border-radius: var(--radius-md);
   margin-top: 1.5rem;
@@ -686,23 +736,21 @@ img {
 }
 
 /* ==========================================================================
-   MODULE 2: INTERACTIVE BATCH VERIFIER
+   AUTHENTICITY BATCH VERIFIER
    ========================================================================== */
 .verifier-wrap {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-bezel);
-  border-radius: var(--radius-lg);
-  padding: 3rem 2rem;
-  margin-top: 4rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 2rem;
 }
 
 @media (min-width: 850px) {
   .verifier-wrap {
     grid-template-columns: 1fr 1fr;
-    padding: 4rem 3.5rem;
     align-items: center;
   }
 }
@@ -718,7 +766,7 @@ img {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-bezel);
   padding: 1rem 1.25rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   color: #FFF;
   font-family: monospace;
   font-size: 0.95rem;
@@ -731,8 +779,9 @@ img {
 }
 
 .verify-result-box {
-  background: rgba(0, 229, 255, 0.05);
-  border: 1px solid var(--border-accent);
+  background: rgba(0, 229, 255, 0.04);
+  border: 1px solid var(--border-hairline);
+  border-left: 3px solid var(--accent-electric);
   border-radius: var(--radius-md);
   padding: 1.75rem;
   display: none;
@@ -743,7 +792,7 @@ img {
 }
 
 /* ==========================================================================
-   BENTO GRID & FOOTER
+   BENTO GRID
    ========================================================================== */
 .bento-grid-container {
   display: grid;
@@ -761,8 +810,8 @@ img {
 
 .bento-card {
   position: relative;
-  background: var(--bg-card);
-  border: 1px solid var(--border-bezel);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-hairline);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
   overflow: hidden;
@@ -774,7 +823,7 @@ img {
 
 .bento-card:hover {
   border-color: var(--border-accent);
-  background: var(--bg-card-hover);
+  background: rgba(255, 255, 255, 0.04);
   transform: translateY(-4px);
 }
 
@@ -810,22 +859,39 @@ img {
   z-index: 2;
 }
 
+.bento-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  color: var(--accent-electric);
+  font-weight: 800;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.bento-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: #FFF;
+  margin-bottom: 0.75rem;
+}
+
+.bento-desc {
+  font-size: 0.95rem;
+  color: var(--text-subtle);
+  max-width: 500px;
+}
+
 .acquire-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-bezel);
-  border-radius: var(--radius-lg);
-  padding: 3rem 2rem;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.95);
+  padding: 0;
 }
 
 @media (min-width: 850px) {
   .acquire-grid {
     grid-template-columns: 1.15fr 0.85fr;
     align-items: center;
-    padding: 4.5rem 3.5rem;
   }
 }
 
@@ -853,6 +919,20 @@ img {
   text-transform: uppercase;
 }
 
+.urgency-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--accent-electric);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   CART & FOOTER
+   ========================================================================== */
 .cart-overlay {
   position: fixed;
   inset: 0;
@@ -876,7 +956,7 @@ img {
   width: 100%;
   max-width: 450px;
   height: 100%;
-  background: var(--bg-card);
+  background: var(--bg-deep);
   border-left: 1px solid var(--border-bezel);
   z-index: 201;
   transform: translateX(100%);
@@ -1006,6 +1086,22 @@ img {
   font-weight: 900;
 }
 
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.footer-links a:hover {
+  color: var(--accent-electric);
+}
+
 .social-links {
   display: flex;
   gap: 0.9rem;
@@ -1048,12 +1144,17 @@ img {
   }
 }
 
+.copyright-text {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
 .toast-msg {
   position: fixed;
   bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%) translateY(100px);
-  background: var(--bg-card);
+  background: var(--bg-surface);
   border: 1px solid var(--accent-electric);
   color: #FFF;
   padding: 0.9rem 1.85rem;
@@ -1082,4 +1183,14 @@ img {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.story-scrub-word {
+  opacity: 0.25;
+  transition: opacity 0.3s ease;
+}
+
+.story-scrub-word.active {
+  opacity: 1;
+  color: var(--accent-electric);
 }
