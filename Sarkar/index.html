@@ -7,7 +7,7 @@
   <meta name="description" content="VOLT Eau De Parfum by Sarkar Perfumes (House of Bhuvan Bam). Restless. Electric. Unstoppable. Scent notes of bergamot, black pepper, violet leaf, ozonic accord, vetiver & amber musk. ₹1,799 (100ml).">
   
   <!-- Preload Critical Hero Image -->
-  <link rel="preload" as="image" href="assets/volt-hero-bottle.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/volt-hero-bottle.webp" type="image/webp" fetchpriority="high">
 
   <!-- Preconnect to Font CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -266,7 +266,10 @@
         <!-- 3D Bottle Stage -->
         <div class="hero-bottle-3d-stage reveal">
           <div class="hero-bottle-card-3d" id="heroBottleCard">
-            <img src="assets/volt-hero-bottle.jpg" alt="SARKAR VOLT Eau De Parfum Crystal King Chess Bottle" width="440" height="650" fetchpriority="high" decoding="async">
+            <picture>
+              <source srcset="assets/volt-hero-bottle.webp" type="image/webp">
+              <img src="assets/volt-hero-bottle.jpg" alt="SARKAR VOLT Eau De Parfum Crystal King Chess Bottle" width="440" height="650" fetchpriority="high" decoding="sync">
+            </picture>
           </div>
         </div>
       </div>
@@ -475,7 +478,10 @@
 
         <div class="bento-grid-container reveal">
           <div class="bento-card bento-card-large">
-            <img src="assets/volt-campaign-grid.jpg" alt="Sarkar Campaign Collection Showcase" class="bento-card-img" width="1024" height="682" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="assets/volt-campaign-grid.webp" type="image/webp">
+              <img src="assets/volt-campaign-grid.jpg" alt="Sarkar Campaign Collection Showcase" class="bento-card-img" width="1024" height="682" loading="lazy" decoding="async">
+            </picture>
             <div class="bento-card-content">
               <span class="bento-tag">MASTER CAMPAIGN</span>
               <h3 class="bento-title">CHESS KING VESSEL</h3>
@@ -484,7 +490,10 @@
           </div>
 
           <div class="bento-card bento-card-tall">
-            <img src="assets/sarkar-ambassador.png" alt="Bhuvan Bam - Sarkar Brand Ambassador" class="bento-card-img" width="600" height="600" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="assets/sarkar-ambassador.webp" type="image/webp">
+              <img src="assets/sarkar-ambassador.png" alt="Bhuvan Bam - Sarkar Brand Ambassador" class="bento-card-img" width="600" height="600" loading="lazy" decoding="async">
+            </picture>
             <div class="bento-card-content" style="margin-top: auto;">
               <span class="bento-tag">BRAND AMBASSADOR</span>
               <h3 style="font-size: 1.8rem; color: #FFF; margin-bottom: 0.5rem;">BHUVAN BAM</h3>

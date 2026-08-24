@@ -16,22 +16,30 @@ document.addEventListener('DOMContentLoaded', () => {
   initCartDrawer();
 
   // Non-critical visual enhancements deferred to idle callback for 99+ PageSpeed score
+  // On mobile, skip canvas particles entirely — eliminates TBT and boosts score
+  const isMobile = window.innerWidth < 768;
+
   if ('requestIdleCallback' in window) {
     requestIdleCallback(() => {
-      initAmbientCanvas();
-      initCustomCursor();
+      if (!isMobile) {
+        initAmbientCanvas();
+        initCustomCursor();
+      }
       initScrollProgress();
       initScrubbingText();
-    });
+    }, { timeout: 2000 });
   } else {
     setTimeout(() => {
-      initAmbientCanvas();
-      initCustomCursor();
+      if (!isMobile) {
+        initAmbientCanvas();
+        initCustomCursor();
+      }
       initScrollProgress();
       initScrubbingText();
-    }, 200);
+    }, 300);
   }
 });
+
 
 /* --------------------------------------------------------------------------
    1. HTML5 Canvas Ambient Energy Particle System ("VOLT Atmosphere")
@@ -50,7 +58,7 @@ function initAmbientCanvas() {
   });
 
   const particles = [];
-  const particleCount = Math.min(Math.floor(window.innerWidth / 25), 40);
+  const particleCount = Math.min(Math.floor(window.innerWidth / 40), 25);
 
   class Particle {
     constructor() {
