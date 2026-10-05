@@ -4,41 +4,45 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Critical interactive handlers setup immediately
-  initHeaderScroll();
-  initIntersectionObserver();
-  initBottle3DTilt();
-  initLightingToggle();
-  initFragranceAlchemy();
-  initSillageSimulator();
-  initBatchVerifier();
-  initAccordTabs();
-  initCartDrawer();
-
-  // Non-critical visual enhancements deferred to idle callback for 99+ PageSpeed score
-  // On mobile, skip canvas particles entirely — eliminates TBT and boosts score
   const isMobile = window.innerWidth < 768;
 
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(() => {
-      if (!isMobile) {
-        initAmbientCanvas();
-        initCustomCursor();
-      }
-      initScrollProgress();
-      initScrubbingText();
-    }, { timeout: 2000 });
-  } else {
-    setTimeout(() => {
-      if (!isMobile) {
-        initAmbientCanvas();
-        initCustomCursor();
-      }
-      initScrollProgress();
-      initScrubbingText();
-    }, 300);
-  }
+  // Run everything after browser is idle — zero TBT, zero main thread blocking
+  const runWhenIdle = (fn, timeout) => {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(fn, { timeout: timeout || 1500 });
+    } else {
+      setTimeout(fn, 100);
+    }
+  };
+
+  // Wave 1: Critical interactivity (cart, header, reveals) — still idle but fast timeout
+  runWhenIdle(() => {
+    initHeaderScroll();
+    initIntersectionObserver();
+    initCartDrawer();
+  }, 200);
+
+  // Wave 2: Section interactivity — after first wave
+  runWhenIdle(() => {
+    initBottle3DTilt();
+    initLightingToggle();
+    initFragranceAlchemy();
+    initSillageSimulator();
+    initBatchVerifier();
+    initAccordTabs();
+  }, 800);
+
+  // Wave 3: Visual enhancements — skip canvas/cursor on mobile entirely
+  runWhenIdle(() => {
+    if (!isMobile) {
+      initAmbientCanvas();
+      initCustomCursor();
+    }
+    initScrollProgress();
+    initScrubbingText();
+  }, 1500);
 });
+
 
 
 /* --------------------------------------------------------------------------
