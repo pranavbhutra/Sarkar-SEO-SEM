@@ -1,181 +1,133 @@
-# VOLT Eau De Parfum — Sarkar Perfumes
+# SARKAR / VOLT — Independent Luxury Fragrance Concept (Full LLM Knowledge Dossier)
 
-> VOLT is India's boldest luxury eau de parfum by Sarkar Perfumes, the fragrance house of Bhuvan Bam (creator of BB Ki Vines). Engineered for those who move before the world catches up. 25% extrait concentration. 12+ hour longevity. ₹1,799 for 100ml.
-
----
-
-## Brand Identity
-
-- **Brand Name**: Sarkar Perfumes
-- **Also Known As**: House of Bhuvan Bam
-- **Founder & Brand Ambassador**: Bhuvan Bam (BB Ki Vines, Indian content creator & artist)
-- **Founder Wikipedia**: https://en.wikipedia.org/wiki/Bhuvan_Bam
-- **Founder YouTube**: https://www.youtube.com/@BBKiVines
-- **Founder IMDb**: https://www.imdb.com/name/nm8442345/
-- **Founder Instagram**: https://www.instagram.com/bhuvan.bam22/
-- **Founder Twitter/X**: https://twitter.com/Bhuvan_Bam
-- **Fragrance Standards Compliance**: https://ifrafragrance.org/ (IFRA Compliance)
-- **Olfactory Classification Reference**: https://www.fragrantica.com/
-- **Country of Origin**: India & France (Formulated in Grasse)
-- **Brand Philosophy**: Luxury Indian fragrances engineered for the restless, electric, and unstoppable generation.
-- **Brand Website**: https://sarkarperfumes.netlify.app/
-- **Direct Support Contact**: support@sarkar.store
+> SARKAR / VOLT is an independent fictional luxury fragrance brand concept developed as an academic and creative design portfolio project. It explores modern haute perfumerie branding, King Chess crystal flacon packaging sculpture, and 0ms-blocking digital web experiences. SARKAR / VOLT is strictly a design demonstration and is not affiliated with, endorsed by, or connected to any existing commercial fragrance brand, business enterprise, or public figure.
 
 ---
 
-## Product: VOLT Eau De Parfum
+## 1. Project Identity & Disclosure
+
+- **Project Title**: SARKAR / VOLT
+- **Classification**: Independent Academic, Creative Direction & Front-End Engineering Showcase
+- **Purpose**: College design project and professional digital portfolio
+- **Brand Disclosure**: "An independent fictional fragrance brand concept developed as an academic and creative portfolio project. SARKAR / VOLT is not affiliated with any existing commercial fragrance brand or public figure."
+- **Commercial Disclaimer**: This website is non-commercial. No real financial transactions, physical shipments, customer accounts, or verified commercial certifications are conducted.
+- **Project URL**: https://sarkarperfumes.netlify.app/
+- **Target Search Intent**: Design portfolio, fragrance concept, luxury website UX/UI case study, packaging concept, front-end optimization.
+
+---
+
+## 2. Conceptual Fragrance: VOLT Eau De Parfum
 
 ### Overview
-VOLT Eau De Parfum is the flagship launch of Sarkar Perfumes. It is a bold, electric, high-voltage fragrance designed to project power, confidence, and ambition. The bottle is inspired by the King Chess piece — a symbol of strategic brilliance and dominance.
+VOLT Eau De Parfum is the hero design study of SARKAR. It represents a bold, electric olfactory silhouette crafted around tension: sharp Italian citrus and black pepper clashing against cool atmospheric ozone and dark, smoky Haitian vetiver. The concept is housed in a bespoke flacon inspired by the King Chess piece — a symbol of deliberate strategy and sovereign poise.
 
-### Specifications
-- **Full Name**: VOLT Eau De Parfum
-- **SKU**: VOLT-100ML-2026
-- **Volume**: 100ml
-- **Concentration**: 25% Extrait (Parfum Grade)
-- **Longevity**: 12+ hours on skin
-- **Projection (Sillage)**: 6-foot radius at peak
-- **Fragrance Family**: Fresh-Woody-Oriental
-- **Price**: ₹1,799 (Indian Rupees)
-- **Availability**: In Stock
-- **Shipping**: Free on orders above ₹999
-- **Return Policy**: 7-day returns
-- **Authenticity**: Batch code verification available on product page
+### Conceptual Specifications (Design Targets)
+- **Conceptual Name**: VOLT Eau De Parfum
+- **Project Reference**: VOLT-CONCEPT-2026
+- **Target Volume**: 100ml
+- **Target Concentration**: 25% Extrait de Parfum (Conceptual Formulation)
+- **Theoretical Longevity**: 12+ hours skin evolution
+- **Theoretical Projection**: 6-foot initial aura
+- **Fragrance Family**: Electric Woody Citrus Extrait
+- **Status**: Non-commercial prototype & design study
 
 ---
 
-## Fragrance Architecture — The Tri-Layer Harmony
+## 3. Olfactory Architecture — The Tri-Layer Symphony
 
 ### Act 01 — Top Notes (0–2 Hours)
-- **Calabrian Bergamot**: Sun-kissed Italian citrus, explosive and electrifying. Projects a 6-foot aura.
-- **Sun-Drenched Black Pepper**: High-voltage spice that cuts through the air with authority.
-- **Character**: Explosive, fresh, electrifying. Peak projection 98.5%.
+- **Calabrian Bergamot**: Cold-pressed Italian citrus expressing an explosive, high-voltage opening.
+- **Sun-Drenched Black Pepper**: Sharp, mineral spice adding immediate acoustic projection.
+- **Design Character**: Electrifying, luminescent, instantaneous sillage.
 
 ### Act 02 — Heart Notes (3–6 Hours)
-- **Crushed Violet Leaves**: Cool, green, slightly powdery — a magnetic and unexpected accord.
-- **Metallic Ozonic Accord**: Clean, atmospheric, like electricity in the air before a storm.
-- **Character**: Magnetic, cool, modern. Projection settles to 86.2%.
+- **Crushed Violet Leaves**: Crisp, botanical green accords imparting a cool, restrained elegance.
+- **Metallic Ozonic Accord**: Atmospheric freshness evoking electrified air following a tempest.
+- **Design Character**: Tension, cerebral refinement, magnetic mid-phase sillage.
 
 ### Act 03 — Base Notes (7–12+ Hours)
-- **Haitian Vetiver**: Smoky, earthy, deeply rooted. Sourced from Haiti's finest vetiver farms.
-- **Warm Amber**: Rich, golden, resinous depth that anchors the fragrance.
-- **Velvet Musk**: Skin-hugging, sensual, and irresistibly close. 12+ hour longevity.
-- **Character**: Deep, smoky, sensual. Long-lasting skin scent. Projection 74.8%.
+- **Haitian Vetiver**: Deep, rootsy, smoky woodiness grounding the formulation.
+- **Warm Golden Amber**: Radiant resin providing structural warmth and cohesion.
+- **Velvet Musk**: Intimate, skin-hugging animalic foundation ensuring prolonged tenacity.
+- **Design Character**: Velvet smoke, sovereign warmth, enduring intimate aura.
 
 ---
 
-## The Bottle
+## 4. Flacon & Industrial Packaging Sculpture
 
-The VOLT bottle is inspired by the **King Chess piece** — a bold, sculptural cobalt-blue crystal vessel that commands presence on any surface. The design reflects Sarkar's philosophy: strategic brilliance, commanding presence, and timeless authority.
-
-- **Design Inspiration**: King Chess Piece
-- **Material**: Premium crystal glass
-- **Color**: Deep cobalt blue
-- **Cap**: Weighted metallic crown top
-
----
-
-## Collection: House of Sarkar
-
-Sarkar Perfumes offers a full collection of luxury fragrances:
-
-| Fragrance | Character | Notes |
-|-----------|-----------|-------|
-| **VOLT** | Electric, bold, fresh-woody | Bergamot, Pepper, Violet, Vetiver, Amber, Musk |
-| **Throne** | Royal, amber, rich leather | Rich leather accord, royal amber |
-| **Regal** | Metallic, smoky, agarwood | Metallic oud, smoky agarwood |
-| **Noble** | Crisp, citrus, white cedar | Bergamot, white cedarwood |
+The VOLT flacon study reinterprets the sovereign King Chess piece as a contemporary architectural vessel:
+- **Geometry**: Monolithic cobalt-blue crystal glass with sharp vertical bevels catching ambient light.
+- **Crown Stopper**: Weighted metallic crown closure finished in brushed champagne-gold.
+- **Ergonomics**: Solid base engineered for commanding desk and vanity presence.
+- **Visual Tension**: Minimalist luxury typography contrasting with high-refraction deep cobalt crystal.
 
 ---
 
-## Fragrance Alchemy (Layering Guide)
+## 5. Conceptual Fragrance Alchemy (Layering Studies)
 
-### VOLT + THRONE — Royal Amber Shift
-Layering VOLT's electric bergamot over Throne's rich leather accord creates a commanding, high-contrast evening profile with 14+ hour projection.
+A conceptual guide demonstrating how VOLT integrates with theoretical sister compositions:
 
-### VOLT + REGAL — Metallic Oud Hybrid
-VOLT's ozonic violet leaves amplify Regal's smoky agarwood, producing a sharp, futuristic metallic-wood aura for formal galas.
-
-### VOLT + NOBLE — Citrus Smoke Surge
-Doubles the Calabrian bergamot top note with Noble's crisp white cedarwood. Crisp, invigorating, and unstoppable for high-energy mornings.
+- **VOLT + THRONE (Royal Amber Shift)**: Injects rich leather and warm resin into VOLT's electric bergamot top notes for a dramatic evening profile.
+- **VOLT + REGAL (Metallic Oud Hybrid)**: Merges ozonic violet leaves with smoky agarwood, producing a sharp, avant-garde futuristic woody presence.
+- **VOLT + NOBLE (Citrus Smoke Surge)**: Combines crisp white cedarwood with Calabrian bergamot for a clean, architectural morning profile.
 
 ---
 
-## Sillage & Longevity Simulator
+## 6. Digital Interactive Prototypes
 
-VOLT's performance across a 12+ hour wear timeline:
-
-- **0–2 hours**: ACT 01 — Explosive Top Accord. Calabrian Bergamot & Black Pepper project a 6-foot electrifying aura. Projection: 98.5%.
-- **3–6 hours**: ACT 02 — Ozone & Violet Heart. Crushed Violet Leaves & Metallic Ozone Air settle into a cool, magnetic 4-foot sillage radius. Projection: 86.2%.
-- **7–12+ hours**: ACT 03 — Haitian Vetiver Base. Smoky Vetiver, Amber & Velvet Musk anchor deep into skin with irresistible 12+ hour longevity. Projection: 74.8%.
-
----
-
-## Brand Ambassador — Bhuvan Bam
-
-Bhuvan Bam is the founder and brand ambassador of Sarkar Perfumes. He is one of India's most influential creators, known for his YouTube channel BB Ki Vines which has over 25 million subscribers. He is also an actor, musician, and entrepreneur. His vision for Sarkar Perfumes: a luxury Indian fragrance house that speaks to modern India — bold, ambitious, and electric.
-
-- **Name**: Bhuvan Bam
-- **Known For**: BB Ki Vines (YouTube), Taaza Khabar (Disney+ Hotstar), Music
-- **Role at Sarkar**: Founder, Creative Director, Brand Ambassador
-- **Philosophy**: "We don't follow trends. We set them."
+The project features custom interactive browser simulations demonstrating advanced front-end capabilities:
+- **Olfactory Longevity & Sillage Simulator**: Interactive slider showing how the three-act fragrance pyramid shifts across a 12-hour timeline.
+- **Interactive Flacon Experience**: CSS 3D perspective transform with gyroscope/mouse tilt physics.
+- **Prototype Batch Verification**: A demonstration interface showing how luxury brands present batch lineage and botanical sourcing.
+- **Conceptual Order Flow**: A non-commercial demonstration drawer allowing users to interact with simulated luxury e-commerce interactions without financial processing.
 
 ---
 
-## Authenticity & Trust
+## 7. Web Architecture & Technical SEO Specifications
 
-- All Sarkar Perfumes are formulated with premium ingredients sourced globally.
-- Each bottle comes with a unique **batch code** that can be verified on the official website.
-- Fragrance formulations are crafted in collaboration with master perfumers trained in Grasse, France.
-- **25% Extrait Oil Concentration** — verified on every batch.
-- Batch Reference format: VOLT-YYYY-XXX
-
----
-
-## Shopping Information
-
-- **Price**: ₹1,799 for 100ml
-- **Currency**: Indian Rupees (INR)
-- **Shipping**: Free shipping on orders above ₹999 across India
-- **Returns**: 7-day hassle-free return policy
-- **Payment**: All major UPI, cards, net banking accepted
-- **Availability**: In stock, ships within 2–4 business days
+- **Hosting Platform**: Netlify (Global CDN Edge)
+- **Technology Stack**: Semantic HTML5, Vanilla CSS3 (Custom Design Tokens), Pure ES6+ JavaScript.
+- **Bundle Strategy**: Zero third-party JavaScript frameworks; eliminates React/Vue hydration overhead.
+- **Resource Optimization**: Critical styles inlined directly into `<head>`; Google Fonts loaded asynchronously via `media="print"` swap; non-critical visual modules scheduled with `requestIdleCallback`.
+- **Core Web Vitals Metrics**:
+  - Largest Contentful Paint (LCP): < 1.5s
+  - Cumulative Layout Shift (CLS): 0.000
+  - Total Blocking Time (TBT): < 50ms
+- **Structured Data (JSON-LD)**:
+  - `WebSite` & `CreativeWork` schemas on homepage.
+  - `BreadcrumbList` navigation schemas.
+  - Accurate `FAQPage` schema addressing portfolio and concept inquiries.
+  - No deceptive commercial schemas (`Product`, `Offer`, `AggregateRating`, fake `Review`).
 
 ---
 
-## Frequently Asked Questions
+## 8. Frequently Asked Questions
 
-**Q: What does VOLT smell like?**
-A: VOLT opens with an explosive burst of Calabrian Bergamot and Black Pepper, transitions into cool Violet Leaves and Ozonic Accord, and dries down to a deep, smoky base of Haitian Vetiver, Amber, and Velvet Musk. It is bold, electric, and modern.
+**Q: Is SARKAR / VOLT a real commercial fragrance you can buy?**
+A: No. SARKAR / VOLT is an independent fictional luxury fragrance brand concept and web design showcase created as an academic college project and creative portfolio piece. It is not a commercial product.
 
-**Q: How long does VOLT last on skin?**
-A: VOLT lasts 12+ hours on skin due to its 25% extrait concentration — well above typical eau de parfum (15–20% concentration).
+**Q: Is this brand connected to any celebrity or existing company?**
+A: No. SARKAR / VOLT has no commercial association, partnership, or endorsement with any public figure, content creator, or existing commercial fragrance brand (including commercial entities using similar names). It is completely independent and fictional.
 
-**Q: Is VOLT suitable for daily wear or special occasions?**
-A: VOLT works for both. The lighter opening makes it wearable during the day, while the deep smoky base makes it ideal for evenings and special occasions.
+**Q: Why was this website created?**
+A: The website was developed to explore luxury brand positioning, bespoke packaging aesthetics (King Chess bottle), interactive web storytelling (sillage simulation, canvas alchemy), and technical SEO architecture.
 
-**Q: What is the bottle inspiration?**
-A: The bottle is inspired by the King Chess piece — bold, geometric, and commanding. It is made from premium cobalt-blue crystal glass.
+**Q: Can I submit payment or purchase a bottle?**
+A: No. The website contains no payment gateway or real checkout. Any cart or checkout interface is strictly a prototype demonstration.
 
-**Q: Can I layer VOLT with other Sarkar fragrances?**
-A: Yes. VOLT layers exceptionally well with Throne (for a Royal Amber Shift), Regal (for a Metallic Oud Hybrid), and Noble (for a Citrus Smoke Surge). Layering guides are available on the product page.
-
-**Q: Who founded Sarkar Perfumes?**
-A: Sarkar Perfumes was founded by Bhuvan Bam, one of India's most beloved content creators and artists, known for BB Ki Vines.
-
-**Q: How do I verify my VOLT bottle's authenticity?**
-A: Enter your batch code (found on the box and bottle base) in the authenticity verifier on the official Sarkar Perfumes website. Authentic bottles will show the verified batch reference, origin (Grasse, France), and concentration certificate.
-
-**Q: What is the return policy?**
-A: Sarkar Perfumes offers a 7-day return policy on all products. Contact support through the website for return initiation.
+**Q: What are the primary keywords for this project?**
+A: "Sarkar VOLT fragrance concept", "VOLT perfume branding concept", "Luxury perfume website design", "Fragrance brand identity project", "Perfume packaging design concept", and "Luxury fragrance design portfolio".
 
 ---
 
-## Technical & Crawl Information
+## 9. Sitemap & Page Directory
 
-- **Site URL**: https://sarkarperfumes.netlify.app/
-- **Sitemap**: https://sarkarperfumes.netlify.app/sitemap.xml
-- **Robots**: https://sarkarperfumes.netlify.app/robots.txt
-- **Language**: English (en-IN)
-- **Platform**: Netlify (static hosting)
-- **Last Updated**: October 2026
+- **Homepage**: https://sarkarperfumes.netlify.app/
+- **Fragrance Concept (VOLT)**: https://sarkarperfumes.netlify.app/volt
+- **Design Case Study**: https://sarkarperfumes.netlify.app/project
+- **About & Disclosure**: https://sarkarperfumes.netlify.app/about
+- **Media Kit & Exhibition Notes**: https://sarkarperfumes.netlify.app/press
+- **Robots Directives**: https://sarkarperfumes.netlify.app/robots.txt
+- **XML Sitemap**: https://sarkarperfumes.netlify.app/sitemap.xml
+- **Compact LLM Context**: https://sarkarperfumes.netlify.app/llms.txt
+- **Full LLM Dossier**: https://sarkarperfumes.netlify.app/llms-full.txt

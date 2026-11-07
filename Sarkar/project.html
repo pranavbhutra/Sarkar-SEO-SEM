@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SARKAR / VOLT Design Case Study | Luxury Fragrance Portfolio Project</title>
+  <meta name="description" content="Read the comprehensive design and technical case study for SARKAR / VOLT: creative direction, King Chess bottle packaging, dark-mode luxury design system, and 0ms-blocking front-end engineering.">
+  <link rel="canonical" href="https://sarkarperfumes.netlify.app/project">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="SARKAR / VOLT Design Case Study | Luxury Fragrance Portfolio Project">
+  <meta property="og:description" content="In-depth portfolio breakdown: brand strategy, bottle sculpture, visual identity tokens, interaction engineering, and modern technical SEO for an independent luxury fragrance concept.">
+  <meta property="og:url" content="https://sarkarperfumes.netlify.app/project">
+  <meta property="og:image" content="https://sarkarperfumes.netlify.app/assets/volt-campaign-grid.webp">
+  <meta property="og:site_name" content="SARKAR / VOLT - Independent Fragrance Concept">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SARKAR / VOLT Design Case Study | Luxury Fragrance Portfolio Project">
+  <meta name="twitter:description" content="An academic and professional portfolio case study exploring luxury brand positioning, packaging design, and performance-led creative web development.">
+  <meta name="twitter:image" content="https://sarkarperfumes.netlify.app/assets/volt-campaign-grid.webp">
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&f[]=satoshi@400,700,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&display=swap">
+
+  <!-- Structured Data: CreativeWork Case Study -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "SARKAR / VOLT Creative Case Study & Design System",
+    "headline": "SARKAR / VOLT — Luxury Fragrance Concept Case Study",
+    "description": "Comprehensive creative brief, industrial bottle design documentation, design system tokens, and web engineering overview for an independent luxury fragrance concept.",
+    "genre": "Digital Portfolio Case Study",
+    "url": "https://sarkarperfumes.netlify.app/project",
+    "about": [
+      "Luxury Fragrance Packaging Design",
+      "Brand Positioning & Creative Direction",
+      "Design Systems & Design Tokens",
+      "Front-End Web Performance (Core Web Vitals)",
+      "Technical SEO Architecture"
+    ],
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sarkarperfumes.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Project Case Study",
+          "item": "https://sarkarperfumes.netlify.app/project"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-deep: #050508;
+      --bg-surface: #0a0a12;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --border-hairline: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(0, 229, 255, 0.35);
+      --accent-electric: #00e5ff;
+      --accent-gold: #ffb446;
+      --text-main: #f0f2f8;
+      --text-subtle: #9ba1b5;
+      --text-muted: #646a7e;
+      --font-sans: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Cabinet Grotesk', sans-serif;
+      --font-serif: 'Playfair Display', serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg-deep);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.8;
+      padding-top: 5rem;
+    }
+    a { color: var(--accent-electric); text-decoration: none; transition: opacity 0.2s; }
+    a:hover { opacity: 0.8; text-decoration: underline; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Nav Bar */
+    .top-nav {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+      background: rgba(5, 5, 8, 0.88); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-hairline);
+      padding: 1rem 1.5rem;
+    }
+    .top-nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-brand { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; letter-spacing: 0.15em; color: #FFF; }
+    .nav-links { display: flex; gap: 1.5rem; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; }
+    .nav-links a { color: var(--text-subtle); }
+    .nav-links a.active, .nav-links a:hover { color: var(--accent-electric); }
+
+    /* Concept Disclosure */
+    .concept-notice {
+      background: rgba(0, 229, 255, 0.05);
+      border: 1px solid var(--border-accent);
+      border-radius: 8px;
+      padding: 0.9rem 1.25rem;
+      margin: 1.5rem 0 2.5rem 0;
+      font-size: 0.82rem;
+      color: var(--text-subtle);
+      line-height: 1.6;
+    }
+    .concept-notice strong { color: var(--accent-electric); }
+
+    /* Headers */
+    h1 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 900; line-height: 1.15; color: #FFF; margin-bottom: 1rem; }
+    h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; color: #FFF; margin: 3.5rem 0 1rem 0; border-bottom: 1px solid var(--border-hairline); padding-bottom: 0.5rem; }
+    h3 { font-size: 1.25rem; color: #FFF; margin: 1.75rem 0 0.5rem 0; }
+
+    /* Grid & Cards */
+    .case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .case-card { background: var(--bg-card); border: 1px solid var(--border-hairline); border-radius: 12px; padding: 1.75rem; }
+    .card-tag { font-size: 0.72rem; letter-spacing: 0.25em; color: var(--accent-electric); text-transform: uppercase; font-weight: 800; display: block; margin-bottom: 0.5rem; }
+
+    /* Visual Media */
+    .media-card { background: var(--bg-surface); border: 1px solid var(--border-hairline); border-radius: 14px; overflow: hidden; margin: 2.5rem 0; text-align: center; }
+    .media-card img { width: 100%; max-height: 520px; object-fit: cover; display: block; }
+    .media-caption { padding: 1rem; font-size: 0.82rem; color: var(--text-muted); }
+
+    /* Color Swatches */
+    .palette-flex { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0; }
+    .palette-swatch { flex: 1; min-width: 130px; border-radius: 10px; padding: 1.5rem 1rem; border: 1px solid var(--border-hairline); text-align: center; font-size: 0.8rem; }
+
+    /* Code Snippets */
+    code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.88em; color: var(--accent-electric); }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--border-hairline); padding: 4rem 0 2rem 0; margin-top: 5rem; font-size: 0.85rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Glass Pill Navigation -->
+  <header class="top-nav">
+    <div class="top-nav-inner">
+      <a href="/" class="nav-brand">SARKAR / VOLT</a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/volt">The Concept</a>
+        <a href="/project" class="active">Project Study</a>
+        <a href="/about">About</a>
+        <a href="/press">Media Kit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Breadcrumbs -->
+    <nav aria-label="Breadcrumb" style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 1rem;">
+      <a href="/">Home</a> &rsaquo; <span>Project Case Study</span>
+    </nav>
+
+    <!-- Concept Disclosure Pill -->
+    <div class="concept-notice">
+      <strong>PORTFOLIO &amp; CREATIVE CASE STUDY:</strong> SARKAR / VOLT is an independent fictional fragrance concept developed as an academic and creative design portfolio project. SARKAR / VOLT is not affiliated with, endorsed by, or connected to any commercial fragrance brand or public figure.
+    </div>
+
+    <!-- Main Title Area -->
+    <p style="font-size: 0.82rem; letter-spacing: 0.35em; color: var(--accent-electric); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">
+      PORTFOLIO CASE STUDY &bull; BRAND IDENTITY, PACKAGING &amp; DIGITAL EXPERIENCE
+    </p>
+    <h1>Project Overview: SARKAR / VOLT</h1>
+    <p style="font-size: 1.15rem; color: var(--text-subtle); max-width: 820px; margin-bottom: 2rem;">
+      An end-to-end design case study examining how luxury branding, avant-garde industrial flacon sculpture, and performance-driven web engineering merge into a cohesive digital experience.
+    </p>
+
+    <!-- Project Metrics Overview -->
+    <div class="case-grid">
+      <div class="case-card">
+        <span class="card-tag">PROJECT TYPE</span>
+        <h3 style="margin-top: 0;">Academic &amp; Design Portfolio</h3>
+        <p style="font-size: 0.88rem; color: var(--text-subtle);">
+          Exploration of luxury brand strategy, industrial flacon sculpting, and zero-blocking interactive web engineering.
+        </p>
+      </div>
+
+      <div class="case-card">
+        <span class="card-tag">CREATIVE DISCIPLINES</span>
+        <h3 style="margin-top: 0;">Multi-Disciplinary Design</h3>
+        <p style="font-size: 0.88rem; color: var(--text-subtle);">
+          Brand strategy, olfactory storytelling, 3D bottle staging, design systems, technical SEO architecture, and web performance.
+        </p>
+      </div>
+
+      <div class="case-card">
+        <span class="card-tag">TECHNICAL BENCHMARK</span>
+        <h3 style="margin-top: 0;">Core Web Vitals Optimal</h3>
+        <p style="font-size: 0.88rem; color: var(--text-subtle);">
+          Zero external CSS render-blocking, HTML5 Canvas particle atmosphere, deferred JS execution via <code>requestIdleCallback</code>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 1: The Creative Brief -->
+    <h2>1. The Creative Brief &amp; Strategic Objectives</h2>
+    <p>
+      The primary objective of the SARKAR / VOLT project was to craft a luxury fragrance concept that rejects conventional fragrance advertising tropes (such as generic romance or beach landscapes) in favor of <strong>commanding architectural geometry and kinetic energy</strong>.
+    </p>
+    <p style="margin-top: 1rem;">
+      Key goals established at project inception:
+    </p>
+    <ul style="color: var(--text-subtle); padding-left: 1.5rem; margin-top: 0.75rem;">
+      <li><strong>Distinctive Visual Archetype:</strong> Design a flagship flacon with unmistakable shelf silhouette inspired by classical game theory and monarchic strategy (the King Chess piece).</li>
+      <li><strong>Three-Act Olfactory Storytelling:</strong> Craft an evocative scent narrative that moves from sharp citrus impact through green mineral ozone into grounded smoky vetiver roots.</li>
+      <li><strong>Sensory Digital Translation:</strong> Build interactive web modules (Sillage Longevity Simulator, Accord Layering Alchemy, 3D Ambient Bottle Lighting) that simulate sensory perfume evaluation through digital interfaces.</li>
+      <li><strong>Technical Rigor:</strong> Achieve top-tier Web Vitals (sub-1.5s LCP, zero layout shifts) without sacrificing high-end dark-mode luxury aesthetics.</li>
+    </ul>
+
+    <!-- Section 2: Visual Identity & Design Tokens -->
+    <h2>2. Visual Identity &amp; Design Token Architecture</h2>
+    <p>
+      Luxury websites often suffer from heavy asset bloat. SARKAR / VOLT resolved this through a calibrated design system based on dark-mode glassmorphic layers, high typographic contrast, and restrained electric highlights.
+    </p>
+
+    <h3>Color Token Palette</h3>
+    <div class="palette-flex">
+      <div class="palette-swatch" style="background: #050508; color: #FFF;">
+        <strong>Deep Obsidian</strong>
+        <div style="font-size: 0.75rem; opacity: 0.7; margin-top: 0.25rem;">#050508</div>
+        <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.5rem;">Background Base</div>
+      </div>
+
+      <div class="palette-swatch" style="background: #00E5FF; color: #050508;">
+        <strong>Electric Cyan</strong>
+        <div style="font-size: 0.75rem; font-weight: 700; margin-top: 0.25rem;">#00E5FF</div>
+        <div style="font-size: 0.72rem; color: #050508; margin-top: 0.5rem;">Accent / High-Voltage</div>
+      </div>
+
+      <div class="palette-swatch" style="background: #FFB446; color: #050508;">
+        <strong>Velvet Amber</strong>
+        <div style="font-size: 0.75rem; font-weight: 700; margin-top: 0.25rem;">#FFB446</div>
+        <div style="font-size: 0.72rem; color: #050508; margin-top: 0.5rem;">Base Accord Warmth</div>
+      </div>
+
+      <div class="palette-swatch" style="background: #0D0D18; color: #FFF; border: 1px solid var(--border-accent);">
+        <strong>Surface Glass</strong>
+        <div style="font-size: 0.75rem; opacity: 0.7; margin-top: 0.25rem;">#0D0D18 (92% Alpha)</div>
+        <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.5rem;">Card &amp; Nav Backdrop</div>
+      </div>
+    </div>
+
+    <h3>Typography Hierarchy</h3>
+    <p>
+      The typography fuses modern industrial geometry with traditional luxury editorial serif accents:
+    </p>
+    <ul style="color: var(--text-subtle); padding-left: 1.5rem; margin-top: 0.5rem;">
+      <li><strong>Display Headlines:</strong> <code>Cabinet Grotesk (800, 900)</code> — Aggressive, wide tracking, structural authority.</li>
+      <li><strong>Editorial Accent:</strong> <code>Playfair Display (Italic)</code> — Classical haute parfumerie contrast against harsh sans-serif geometry.</li>
+      <li><strong>Body &amp; Technical Copy:</strong> <code>Satoshi (400, 700)</code> — High legibility at small sizes, optimized for dark-mode contrast.</li>
+    </ul>
+
+    <!-- Section 3: Industrial Packaging & Bottle Sculpture -->
+    <h2>3. Flacon Sculpture &amp; Industrial Packaging</h2>
+    <p>
+      The centerpiece of SARKAR / VOLT is the custom cobalt-blue King Chess vessel. The physical design embodies strategic supremacy:
+    </p>
+
+    <div class="media-card">
+      <picture>
+        <source srcset="assets/volt-campaign-grid.webp" type="image/webp">
+        <img src="assets/volt-campaign-grid.jpg" alt="SARKAR / VOLT Campaign Art Direction and Packaging Grid" width="1024" height="682">
+      </picture>
+      <div class="media-caption">
+        Figure 2.0: Campaign art direction showing flacon geometry, weighted cross finial, and tactile presentation box.
+      </div>
+    </div>
+
+    <div class="case-grid">
+      <div class="case-card">
+        <span class="card-tag">FLACON SILHOUETTE</span>
+        <h3 style="margin-top: 0;">The King Piece Form</h3>
+        <p style="font-size: 0.88rem; color: var(--text-subtle);">
+          A flared pedestal base tapering upward into a carved waist, capped by a sculptural crown. The proportions were drafted to ensure comfortable hand grip during actuation.
+        </p>
+      </div>
+
+      <div class="case-card">
+        <span class="card-tag">OPTICAL GLASS</span>
+        <h3 style="margin-top: 0;">Cobalt Crystal Tinting</h3>
+        <p style="font-size: 0.88rem; color: var(--text-subtle);">
+          The custom cobalt glass protects delicate botanical extrait oils from ultraviolet degradation while providing a luminescent electric blue aura under directional lighting.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 4: Web Engineering & Performance Architecture -->
+    <h2>4. Digital Interaction &amp; Technical SEO Engineering</h2>
+    <p>
+      Unlike commercial template sites built on heavy monolithic e-commerce platforms, SARKAR / VOLT was engineered from first principles with vanilla HTML5, CSS3, and ES6 JavaScript:
+    </p>
+
+    <div class="case-grid">
+      <div class="case-card">
+        <span class="card-tag">PERFORMANCE</span>
+        <h3 style="margin-top: 0;">0ms Render Blocking</h3>
+        <p style="font-size: 0.88rem; color: var(--text-subtle);">
+          100% of critical CSS is inlined directly in the document <code>&lt;head&gt;</code>. Web fonts are requested asynchronously post-paint, ensuring instantaneous First Contentful Paint.
+        </p>
+      </div>
+
+      <div class="case-card">
+        <span class="card-tag">INTERACTION</span>
+        <h3 style="margin-top: 0;">Three-Wave Idle Execution</h3>
+        <p style="font-size: 0.88rem; color: var(--text-subtle);">
+          Interactive scripts (3D tilt, canvas particles, slider mechanics) are divided into three non-blocking execution waves governed by <code>requestIdleCallback</code>.
+        </p>
+      </div>
+
+      <div class="case-card">
+        <span class="card-tag">SEO INTEGRITY</span>
+        <h3 style="margin-top: 0;">Semantic &amp; Entity Compliant</h3>
+        <p style="font-size: 0.88rem; color: var(--text-subtle);">
+          Clean Open Graph, Twitter cards, XML sitemaps, clean URLs via Netlify edge redirects, and schema-compliant <code>CreativeWork</code> metadata.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 5: Design Rationale & Reflection -->
+    <h2>5. Academic Reflection &amp; Portfolio Takeaways</h2>
+    <p>
+      This project demonstrated that luxury aesthetics do not require compromise on web performance or accessibility. By treating the digital flagship not merely as a commercial storefront but as an extension of the brand's physical tactile architecture, the website achieves an immersive atmosphere while maintaining absolute transparency as an independent creative concept.
+    </p>
+
+    <!-- Navigation Links -->
+    <div style="background: var(--bg-card); border: 1px solid var(--border-hairline); border-radius: 12px; padding: 2rem; margin: 3rem 0; text-align: center;">
+      <h3 style="margin-top: 0; font-size: 1.3rem;">Explore Further</h3>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
+        <a href="/volt" style="display: inline-block; background: var(--accent-electric); color: #050508; font-weight: 800; padding: 0.85rem 1.85rem; border-radius: 999px; text-decoration: none;">
+          EXPLORE THE VOLT FLACON CONCEPT &rarr;
+        </a>
+        <a href="/about" style="display: inline-block; background: rgba(255,255,255,0.06); border: 1px solid var(--border-hairline); color: #FFF; font-weight: 700; padding: 0.85rem 1.85rem; border-radius: 999px; text-decoration: none;">
+          BRAND PHILOSOPHY &amp; DISCLOSURE &rarr;
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Clean Academic Footer -->
+  <footer>
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <strong style="color: #FFF;">SARKAR / VOLT</strong> &bull; Independent Luxury Fragrance Concept
+        <p style="margin-top: 0.25rem;">Academic and creative design portfolio case study. Not an operating commercial store.</p>
+      </div>
+      <div>
+        <a href="/" style="margin-right: 1.25rem;">Home</a>
+        <a href="/volt" style="margin-right: 1.25rem;">The Concept</a>
+        <a href="/about" style="margin-right: 1.25rem;">About &amp; Disclosure</a>
+        <a href="/press">Media Kit</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

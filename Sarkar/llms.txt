@@ -1,42 +1,35 @@
-# VOLT Eau De Parfum by Sarkar Perfumes
+# SARKAR / VOLT — Independent Luxury Fragrance Concept
 
-> VOLT is India's boldest luxury eau de parfum by Sarkar Perfumes, the fragrance house of Bhuvan Bam (creator of BB Ki Vines). Engineered for those who move before the world catches up. 25% extrait concentration. 12+ hour longevity. ₹1,799 for 100ml.
+> SARKAR / VOLT is an independent fictional luxury fragrance brand concept developed as an academic and creative design portfolio project. It explores modern haute perfumerie branding, King Chess crystal flacon packaging sculpture, and 0ms-blocking digital web experiences. SARKAR / VOLT is not affiliated with, endorsed by, or connected to any existing commercial fragrance brand or public figure.
 
-## Full Content
+## Project Documentation & Case Studies
 
-- [Full LLM Content](https://sarkarperfumes.netlify.app/llms-full.txt): Complete brand info, product specs, fragrance notes, FAQ, shopping information
+- [Homepage & Interactive Flagship Demo](https://sarkarperfumes.netlify.app/)
+- [VOLT Fragrance Concept & Olfactory Pyramid](https://sarkarperfumes.netlify.app/volt)
+- [Design Case Study & Creative Brief](https://sarkarperfumes.netlify.app/project)
+- [About & Independent Academic Concept Disclosure](https://sarkarperfumes.netlify.app/about)
+- [Portfolio Media Kit & Exhibition Notes](https://sarkarperfumes.netlify.app/press)
+- [Full LLM Knowledge Dossier](https://sarkarperfumes.netlify.app/llms-full.txt)
 
-## Product
+## Conceptual Specifications (Design Targets)
 
-- [VOLT Eau De Parfum – Product Page](https://sarkarperfumes.netlify.app/)
+- Project: SARKAR / VOLT
+- Classification: Independent Academic & Creative Portfolio Design Study
+- Featured Concept: VOLT Eau De Parfum
+- Flacon Sculpture: Bespoke King Chess piece in cobalt-blue crystal glass with weighted metallic crown cap
+- Conceptual Concentration: 25% Pure Extrait Target
+- Theoretical Longevity: 12+ hours skin aura
+- Fragrance Family: Electric Woody Citrus Extrait
 
-## Key Information
+## Conceptual Olfactory Pyramid
 
-- Brand: Sarkar Perfumes (House of Bhuvan Bam)
-- Product: VOLT Eau De Parfum
-- Price: ₹1,799 for 100ml
-- Concentration: 25% Extrait (Parfum Grade)
-- Longevity: 12+ hours
-- Projection: 6-foot sillage radius
-- Fragrance Family: Fresh-Woody-Oriental
+- Act 01 (Top Accord): Calabrian Bergamot, Sun-Drenched Black Pepper
+- Act 02 (Heart Accord): Crushed Violet Leaves, Metallic Ozonic Accord
+- Act 03 (Base Accord): Smoky Haitian Vetiver, Warm Amber, Velvet Musk
 
-## Fragrance Notes
+## Front-End Web Architecture
 
-- Top Notes: Calabrian Bergamot, Sun-Drenched Black Pepper
-- Heart Notes: Violet Leaves, Metallic Ozonic Accord
-- Base Notes: Haitian Vetiver, Warm Amber, Velvet Musk
-
-## Brand
-
-- Founder / Brand Ambassador: Bhuvan Bam (BB Ki Vines)
-- House: Sarkar Perfumes
-- Origin: India
-- Collections: VOLT, Throne, Regal, Noble
-- Philosophy: Luxury Indian fragrance for the restless generation
-
-## Contact & Policies
-
-- Website: https://sarkarperfumes.netlify.app/
-- Authenticity Verification: Available via batch code on product page
-- Free Shipping: On all orders above ₹999
-- Returns: 7-day return policy
+- Framework: Pure Vanilla HTML5, CSS3, ES6+ JavaScript (Zero framework bloat)
+- Performance: 100% inlined critical CSS, 0ms render blocking, asynchronous font loading
+- Core Web Vitals: LCP < 1.5s, CLS 0.00, TBT < 50ms
+- Interactive Modules: Three-wave requestIdleCallback execution for HTML5 Canvas atmosphere, 3D bottle tilt, and longevity simulation

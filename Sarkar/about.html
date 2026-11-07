@@ -3,75 +3,239 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Sarkar Perfumes & Bhuvan Bam | Luxury Indian Fragrance House</title>
-  <meta name="description" content="Discover Sarkar Perfumes, founded by Bhuvan Bam. Formulated with master perfumers in Grasse, France. Discover our heritage, 25% extrait concentrations, and craft.">
-  <meta name="author" content="Bhuvan Bam">
-  <meta name="article:published_time" content="2026-08-01T00:00:00+05:30">
-  <meta name="article:modified_time" content="2026-10-01T00:00:00+05:30">
+  <title>About SARKAR / VOLT | Independent Fragrance Concept &amp; Academic Disclosure</title>
+  <meta name="description" content="Discover the philosophy, creative direction, and academic background behind SARKAR / VOLT, an independent luxury fragrance concept and design portfolio case study.">
   <link rel="canonical" href="https://sarkarperfumes.netlify.app/about">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About SARKAR / VOLT | Independent Fragrance Concept">
+  <meta property="og:description" content="Brand philosophy, creative direction, and formal academic concept disclosure for SARKAR / VOLT.">
+  <meta property="og:url" content="https://sarkarperfumes.netlify.app/about">
+  <meta property="og:image" content="https://sarkarperfumes.netlify.app/assets/volt-hero-bottle.webp">
+  <meta property="og:site_name" content="SARKAR / VOLT - Independent Fragrance Concept">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About SARKAR / VOLT | Independent Fragrance Concept">
+  <meta name="twitter:description" content="Brand philosophy, design rationale, and academic concept disclosure for SARKAR / VOLT.">
+  <meta name="twitter:image" content="https://sarkarperfumes.netlify.app/assets/volt-hero-bottle.webp">
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&f[]=satoshi@400,700,900&display=swap">
+
+  <!-- Structured Data: AboutPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "About Sarkar Perfumes & Bhuvan Bam",
+    "name": "About SARKAR / VOLT - Independent Fragrance Concept",
     "url": "https://sarkarperfumes.netlify.app/about",
-    "description": "Official brand heritage and first-party fragrance dossier for Sarkar Perfumes, founded by Bhuvan Bam.",
-    "author": {
-      "@type": "Person",
-      "name": "Bhuvan Bam",
-      "jobTitle": "Founder & Creative Director",
-      "knowsAbout": ["Fragrance Formulation", "Perfumery", "Extrait de Parfum"]
+    "description": "Formal academic disclosure, creative philosophy, and design methodology behind the SARKAR / VOLT luxury perfume concept.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sarkarperfumes.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About & Disclosure",
+          "item": "https://sarkarperfumes.netlify.app/about"
+        }
+      ]
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Sarkar Perfumes",
-      "url": "https://sarkarperfumes.netlify.app/"
+    "mainEntity": {
+      "@type": "CreativeWork",
+      "name": "SARKAR / VOLT Brand Philosophy & Academic Project Brief",
+      "genre": "Design Portfolio Documentation",
+      "abstract": "An independent academic design study exploring modern haute perfumerie packaging, multi-stage olfactory transitions, and luxury consumer digital experiences."
     }
   }
   </script>
+
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #050508; color: #e0e0e0; margin: 0; padding: 2rem 1.5rem; line-height: 1.8; }
-    .container { max-width: 800px; margin: 0 auto; }
-    h1 { color: #fff; font-size: 2.2rem; margin-bottom: 0.5rem; }
-    h2 { color: #00e5ff; font-size: 1.4rem; margin-top: 2rem; }
-    a { color: #00e5ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .badge { display: inline-block; padding: 4px 10px; background: rgba(0,229,255,0.1); border: 1px solid rgba(0,229,255,0.3); color: #00e5ff; border-radius: 4px; font-size: 0.8rem; margin-bottom: 1rem; }
-    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
-    th, td { border: 1px solid rgba(255,255,255,0.1); padding: 10px 14px; text-align: left; }
-    th { background: rgba(0,229,255,0.1); color: #fff; }
+    :root {
+      --bg-deep: #050508;
+      --bg-surface: #0a0a12;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --border-hairline: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(0, 229, 255, 0.35);
+      --accent-electric: #00e5ff;
+      --accent-gold: #ffb446;
+      --text-main: #f0f2f8;
+      --text-subtle: #9ba1b5;
+      --text-muted: #646a7e;
+      --font-sans: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Cabinet Grotesk', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg-deep);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.8;
+      padding-top: 5rem;
+    }
+    a { color: var(--accent-electric); text-decoration: none; transition: opacity 0.2s; }
+    a:hover { opacity: 0.8; text-decoration: underline; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Nav Bar */
+    .top-nav {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+      background: rgba(5, 5, 8, 0.88); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-hairline);
+      padding: 1rem 1.5rem;
+    }
+    .top-nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-brand { font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; letter-spacing: 0.15em; color: #FFF; }
+    .nav-links { display: flex; gap: 1.5rem; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; }
+    .nav-links a { color: var(--text-subtle); }
+    .nav-links a.active, .nav-links a:hover { color: var(--accent-electric); }
+
+    /* Concept Disclosure */
+    .concept-notice-box {
+      background: rgba(0, 229, 255, 0.06);
+      border-left: 3px solid var(--accent-electric);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      color: #e0e5f5;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    h1 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 900; line-height: 1.15; color: #FFF; margin-bottom: 0.5rem; }
+    h2 { font-family: var(--font-display); font-size: clamp(1.4rem, 3.2vw, 2rem); font-weight: 800; color: #FFF; margin: 3rem 0 1rem 0; }
+
+    .about-card { background: var(--bg-card); border: 1px solid var(--border-hairline); border-radius: 12px; padding: 1.75rem; margin: 1.5rem 0; }
+
+    footer { border-top: 1px solid var(--border-hairline); padding: 4rem 0 2rem 0; margin-top: 5rem; font-size: 0.85rem; color: var(--text-muted); }
   </style>
 </head>
 <body>
-  <div class="container">
-    <a href="/">&larr; Back to Sarkar VOLT Store</a>
-    <div style="margin-top: 1.5rem;">
-      <span class="badge">OFFICIAL HERITAGE & CRAFT DOSSIER</span>
-      <h1>About Sarkar Perfumes</h1>
-      <p><strong>Published:</strong> October 2026 &bull; <strong>Authored by:</strong> Bhuvan Bam (Founder & Creative Director)</p>
+
+  <!-- Floating Glass Pill Navigation -->
+  <header class="top-nav">
+    <div class="top-nav-inner">
+      <a href="/" class="nav-brand">SARKAR / VOLT</a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/volt">The Concept</a>
+        <a href="/project">Project Study</a>
+        <a href="/about" class="active">About</a>
+        <a href="/press">Media Kit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Breadcrumbs -->
+    <nav aria-label="Breadcrumb" style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 1rem;">
+      <a href="/">Home</a> &rsaquo; <span>About &amp; Disclosure</span>
+    </nav>
+
+    <!-- Main Title Area -->
+    <span style="font-size: 0.75rem; letter-spacing: 0.3em; color: var(--accent-electric); text-transform: uppercase; font-weight: 800;">
+      BRAND PHILOSOPHY &bull; ACADEMIC CONTEXT
+    </span>
+    <h1>About SARKAR / VOLT</h1>
+    <p style="font-size: 1.15rem; color: var(--text-subtle); max-width: 780px;">
+      An independent fictional luxury fragrance concept exploring perfume branding, packaging design, and digital creative direction.
+    </p>
+
+    <!-- Formal Independent Concept Disclosure -->
+    <div class="concept-notice-box">
+      <strong style="color: var(--accent-electric); font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; display: block; margin-bottom: 0.5rem;">
+        FORMAL CONCEPT &amp; ACADEMIC DISCLOSURE
+      </strong>
+      <p>
+        An independent fictional fragrance brand concept developed as an academic and creative portfolio project. SARKAR / VOLT is not affiliated with, endorsed by, or connected to any existing commercial fragrance brand or public figure.
+      </p>
+      <p style="margin-top: 0.75rem; font-size: 0.88rem; color: var(--text-subtle);">
+        This website serves solely as an interactive demonstration of design systems, industrial packaging design, and performance-optimized front-end web development. No physical inventory is sold, and no financial transactions are conducted on this domain.
+      </p>
     </div>
 
-    <h2>First-Party Expertise &amp; Hands-On Experience</h2>
-    <p>This brand dossier represents our verified <strong>first-party expertise</strong> and direct <strong>hands-on experience</strong> in fine perfumery. In our proprietary testing across 45 human wearers in India, we tracked sillage longevity every hour and verified 12.4 hours continuous scent projection. Over 18 months, our laboratory conducted hands-on evaluation of over 40 distinct formulation iterations before locking in VOLT's signature extrait ratio.</p>
+    <!-- Philosophy -->
+    <h2>1. Design Philosophy: The Kinetic Aesthetic</h2>
+    <p>
+      SARKAR / VOLT explores a conceptual space where classical perfumery traditions collide with modern mechanical speed. Traditional luxury fragrance branding is frequently defined by passive heritage tropes: royal crests, vintage typography, and understated pastel packaging.
+    </p>
+    <p style="margin-top: 1rem;">
+      In contrast, VOLT was conceived around the theme of <strong>relentless forward momentum</strong>:
+    </p>
+    <div class="about-card">
+      <h3 style="font-size: 1.15rem; color: #FFF; margin-bottom: 0.5rem;">The Core Narrative Spine</h3>
+      <p style="color: var(--text-subtle); font-size: 0.95rem;">
+        <em>"For the ones who move before the world catches up."</em> The concept speaks to innovators, strategists, and creators who thrive under nocturnal pressure. The visual identity reflects this through deep obsidian negative space interrupted by high-voltage electric cyan accents.
+      </p>
+    </div>
 
-    <h2>Formulation &amp; Industry Standards</h2>
-    <p>Every bottle produced under Sarkar Perfumes is verified against global safety benchmarks established by the <a href="https://ifrafragrance.org/" target="_blank" rel="noopener">International Fragrance Association (IFRA)</a> and documented across global fragrance platforms like <a href="https://www.fragrantica.com/" target="_blank" rel="noopener">Fragrantica</a>. Based on our hands-on testing and GC-MS spectrometry, we guarantee an oil concentration of 25% Extrait grade, allowing full 12+ hour sillage projection.</p>
+    <!-- The Flacon Concept -->
+    <h2>2. Industrial Packaging &amp; Bottle Symbolism</h2>
+    <p>
+      The signature King Chess flacon represents strategic foresight and mastery. By transforming the traditional monolithic perfume cylinder into a tactile chess sculpture in cobalt crystal glass, the vessel acts as an art object on an executive desk or architectural vanity.
+    </p>
 
-    <h2>Brand Verification & Social Authority</h2>
-    <p>Follow our founder and verified media coverage:</p>
-    <ul>
-      <li><strong>Founder Wikipedia:</strong> <a href="https://en.wikipedia.org/wiki/Bhuvan_Bam" target="_blank" rel="noopener">Bhuvan Bam on Wikipedia</a></li>
-      <li><strong>YouTube (BB Ki Vines):</strong> <a href="https://www.youtube.com/@BBKiVines" target="_blank" rel="noopener">youtube.com/@BBKiVines</a> (26M+ subscribers)</li>
-      <li><strong>Instagram:</strong> <a href="https://www.instagram.com/bhuvan.bam22/" target="_blank" rel="noopener">@bhuvan.bam22</a></li>
-      <li><strong>Twitter / X:</strong> <a href="https://twitter.com/Bhuvan_Bam" target="_blank" rel="noopener">@Bhuvan_Bam</a></li>
-      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bhuvan-bam" target="_blank" rel="noopener">Bhuvan Bam on LinkedIn</a></li>
-      <li><strong>Crunchbase:</strong> <a href="https://www.crunchbase.com/person/bhuvan-bam" target="_blank" rel="noopener">Bhuvan Bam Profile on Crunchbase</a></li>
-      <li><strong>IMDb Profile:</strong> <a href="https://www.imdb.com/name/nm8442345/" target="_blank" rel="noopener">Bhuvan Bam IMDb</a></li>
-      <li><strong>Trustpilot Reviews:</strong> <a href="https://www.trustpilot.com/review/sarkar.store" target="_blank" rel="noopener">Sarkar Perfumes on Trustpilot</a></li>
+    <!-- Academic & Portfolio Scope -->
+    <h2>3. Project Objectives &amp; Technical Scope</h2>
+    <p>
+      Developed as a multi-disciplinary academic assignment and professional portfolio case study, this project achieved the following deliverables:
+    </p>
+    <ul style="color: var(--text-subtle); padding-left: 1.5rem; margin-top: 0.75rem;">
+      <li><strong>Brand Strategy:</strong> Brand archetype definition, olfactory positioning, and copywriting guidelines.</li>
+      <li><strong>Industrial Design:</strong> 3D bottle geometry, weighted zinc cap mechanics, and tactile presentation box design.</li>
+      <li><strong>Web Engineering:</strong> Pure HTML5/CSS3/ES6 static build with zero render-blocking CSS and lightweight canvas particle effects.</li>
+      <li><strong>Modern Technical SEO:</strong> Clean URL canonicalization, valid schema structured data, semantic heading hierarchies, and high accessibility compliance.</li>
     </ul>
 
-    <h2>Contact Information</h2>
-    <p>Official Support Email: <a href="mailto:support@sarkar.store">support@sarkar.store</a><br>Media Inquiries: <a href="mailto:press@sarkar.store">press@sarkar.store</a></p>
-  </div>
+    <!-- Creative Direction & Contact -->
+    <h2>4. Creative Inquiries &amp; Design Portfolio</h2>
+    <p>
+      If you are a design recruiter, creative director, or digital developer interested in exploring the case study or discussing digital design systems:
+    </p>
+    <div class="about-card">
+      <p style="color: var(--text-subtle); font-size: 0.95rem;">
+        Explore the complete interactive design case study or review the media kit with downloadable project assets:
+      </p>
+      <div style="display: flex; gap: 1rem; margin-top: 1.25rem; flex-wrap: wrap;">
+        <a href="/project" style="display: inline-block; background: var(--accent-electric); color: #050508; font-weight: 800; padding: 0.75rem 1.5rem; border-radius: 999px; text-decoration: none;">
+          VIEW PROJECT CASE STUDY &rarr;
+        </a>
+        <a href="/press" style="display: inline-block; background: rgba(255,255,255,0.06); border: 1px solid var(--border-hairline); color: #FFF; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 999px; text-decoration: none;">
+          MEDIA KIT &amp; ASSETS &rarr;
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Clean Academic Footer -->
+  <footer>
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <strong style="color: #FFF;">SARKAR / VOLT</strong> &bull; Independent Luxury Fragrance Concept
+        <p style="margin-top: 0.25rem;">Academic and creative design portfolio case study. Not an operating commercial store.</p>
+      </div>
+      <div>
+        <a href="/" style="margin-right: 1.25rem;">Home</a>
+        <a href="/volt" style="margin-right: 1.25rem;">The Concept</a>
+        <a href="/project" style="margin-right: 1.25rem;">Project Study</a>
+        <a href="/press">Media Kit</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

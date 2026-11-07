@@ -7,3 +7,24 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com; font-src 'self' https://fonts.gstatic.com https://api.fontshare.com; img-src 'self' data: https:; connect-src 'self';"
     X-XSS-Protection = "1; mode=block"
+
+[[redirects]]
+  from = "/volt"
+  to = "/volt.html"
+  status = 200
+
+[[redirects]]
+  from = "/project"
+  to = "/project.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/press"
+  to = "/press.html"
+  status = 200
+

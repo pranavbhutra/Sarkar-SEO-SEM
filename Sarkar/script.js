@@ -336,10 +336,10 @@ function initBatchVerifier() {
           <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
           <polyline points="22 4 12 14.01 9 11.01"></polyline>
         </svg>
-        <span>AUTHENTIC SARKAR BATCH VERIFIED</span>
+        <span>CONCEPT BATCH SIMULATED (PROTOTYPE DEMO)</span>
       </div>
       <p style="font-size: 0.85rem; color: var(--text-subtle);">
-        Batch Reference: <strong>${code}</strong> • Formulated in Grasse, France • 25% Extrait Oil Concentration Verified.
+        Prototype Reference: <strong>${code}</strong> • SARKAR / VOLT Design Study • Illustrative Extrait Formulation Benchmark.
       </p>
     `;
 
@@ -423,12 +423,11 @@ function initCartDrawer() {
   const toastText = document.getElementById('toastText');
 
   let itemCount = 1;
-  const unitPrice = 1799;
 
   function updateCartUI() {
     if (cartCount) cartCount.textContent = itemCount;
     if (qtyVal) qtyVal.textContent = itemCount;
-    if (cartSubtotal) cartSubtotal.textContent = `₹${(unitPrice * itemCount).toLocaleString('en-IN')}`;
+    if (cartSubtotal) cartSubtotal.textContent = `${itemCount} FLACON DEMO`;
   }
 
   function openCart() {
@@ -474,7 +473,7 @@ function initCartDrawer() {
 
   addButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
-      showToast('SARKAR VOLT Eau De Parfum added to cart');
+      showToast('SARKAR / VOLT: Conceptual flacon added to preview drawer');
       openCart();
     });
   });
